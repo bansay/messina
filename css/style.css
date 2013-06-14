@@ -1,0 +1,26 @@
+/* messina styles, authored by brittany ansay */
+
+/* structural elements */
+
+.container {
+	width:940px; 
+	position: relative; 
+	margin: 0 auto;
+}
+
+.hidden {
+	display: none;
+	visibility: none;
+}
+
+/* header */
+
+header #logo {
+	background: url('../img/messina-logo.png');
+	background-repeat: no-repeat;
+	width: 222px;
+	height: 93px;
+	display: block;
+	position: relative;
+	margin: 0 auto;
+}
