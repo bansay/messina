@@ -30,14 +30,14 @@ padding: 0;
 }
 
 h1 {
-	font-size: 1.875em;
-	color: #2f2e46;
-	margin-bottom: 30px;
+font-size: 1.875em;
+color: #2f2e46;
+margin-bottom: 30px;
 }
 
 h2 {
-	font-size: 1.25em;
-	color: #4c4c4c;
+font-size: 1.25em;
+color: #4c4c4c;
 }
 
 /* global styles */
@@ -94,7 +94,7 @@ text-transform: uppercase;
 color:#cfcfcf;
 font-size: 1.125em;
 letter-spacing: .05em;
-padding-top: 11px;
+padding: 11px 0;
 }
 
 nav ul li a:active, nav ul li a:hover {
@@ -126,10 +126,16 @@ width: 220px;
 float:right;
 }
 
-#sidebar span {
-	font-family: 'junctionRegular';
-	font-size:1.125em;
-	color:#2f2e46;
+#sidebar p.title {
+font-family: 'junctionRegular';
+font-size:1.125em;
+color:#2f2e46;
+margin-bottom: 10px;
+}
+
+/* sub navigation special features */
+#sidebar ul {
+margin-top: 5px;
 }
 
 #sidebar ul li a, 
@@ -139,18 +145,42 @@ footer ul li,
 footer ul li a, 
 footer ul li a:link, 
 footer ul li a:visited {
-	color:#aaa9ba;
-	line-height: 2.25em;
-	font-style: italic;
+color:#aaa9ba;
+line-height: 2.25em;
+font-style: italic;
 }
 
 #sidebar ul li:hover:before, 
 #sidebar ul li:active:before,
 footer ul li:hover:before,
 footer ul li:active:before {
-	content: '\00BB';
-	padding-right: 6px;
-	margin-left:-15px;
+content: '\00BB';
+padding-right: 6px;
+margin-left:-15px;
+color:#aaa9ba;
+}
+
+#sidebar ul li:nth-of-type(1) {
+border-top: solid 1px #aaa9ba;
+}
+
+/* search bar */
+form {
+	margin-bottom: 25px;
+}
+
+input[type=text] {
+height:30px;
+border:solid 1px #cfcfcf;
+padding:0 5px;
+}
+
+#sidebar #search {
+width:60px;
+height:30px;
+border: solid 1px #cfcfcf;
+background:white;
+color:#cfcfcf;
 }
 
 
@@ -162,11 +192,11 @@ footer ul li:active:before {
 
 /* footer */
 footer {
-	clear:both;
-	background:url('../img/footer-bg.png');
-	background-repeat: repeat-x;
-	width:100%;
-	height:333px;
+clear:both;
+background:url('../img/footer-bg.png');
+background-repeat: repeat-x;
+width:100%;
+height:333px;
 }
 
 footer ul {
@@ -177,13 +207,13 @@ margin-top: 30px;
 }
 
 footer #logo-footer {
-	background: url('../img/messina-logo-opaque.png');
-	background-repeat: no-repeat;
-	width:179px;
-	height:75px;
-	position:absolute;
-	right:0;
-	top:35px;
+background: url('../img/messina-logo-opaque.png');
+background-repeat: no-repeat;
+width:179px;
+height:75px;
+position:absolute;
+right:0;
+top:35px;
 }
 
 
