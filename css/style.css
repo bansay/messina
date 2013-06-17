@@ -1,4 +1,7 @@
 /* messina styles, authored by brittany ansay */
+/* to allow for permanent widths and subtractionary margins and padding to this width */
+
+* { -moz-box-sizing: border-box; -webkit-box-sizing: border-box; box-sizing: border-box; }
 
 /* fonts */
 
@@ -20,13 +23,16 @@ padding:0;
 margin:0;
 }
 
-h1, h2, h3 {
+h1, h2, h3, h4, h5, h6 {
 font-family: 'junctionRegular', Arial, sans-serif;
+margin: 0;
+padding: 0;
 }
 
 h1 {
 	font-size: 1.875em;
 	color: #2f2e46;
+	margin-bottom: 30px;
 }
 
 h2 {
@@ -64,7 +70,7 @@ width: 222px;
 height: 93px;
 display: block;
 position: relative;
-margin: 40px auto;
+margin: 40px auto 20px;
 }
 
 /* navigation */
@@ -101,9 +107,11 @@ border-top: solid 3px black;
 #content {
 width: 700px;
 float:left;
+padding-right: 40px;
 }
 
 #content p {
+text-align: justify;
 -moz-column-count:2; /* Firefox */
 -webkit-column-count:2; /* Safari and Chrome */
 column-count:2;
@@ -125,17 +133,30 @@ float:right;
 	color:#2f2e46;
 }
 
+#sidebar ul li a {
+	color:#4c4c4c;
+	line-height: 2.25em;
+}
 
+/* main content section */
+
+#page {
+	margin-top: 40px;
+}
 
 /* footer */
 footer {
 	clear:both;
 }
+footer ul {
+width:30%;
+display: inline-block;
+vertical-align: top;
+}
 
-/* clearfix and hidden */
 
 
-
+/* hidden */
 
 .hidden {
 position: fixed;
