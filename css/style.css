@@ -107,6 +107,12 @@ color: black;
 border-top: solid 3px black;
 }
 
+/* main content section */
+
+#page {
+	margin-top: 40px;
+}
+
 /* content div */
 
 #content {
@@ -171,7 +177,7 @@ border-top: solid 1px #aaa9ba;
 
 /* search bar */
 form {
-	margin-bottom: 25px;
+	margin-bottom: 30px;
 }
 
 input[type=text] {
@@ -188,12 +194,6 @@ background:white;
 color:#cfcfcf;
 }
 
-
-/* main content section */
-
-#page {
-	margin-top: 40px;
-}
 
 /* footer */
 footer {
