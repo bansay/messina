@@ -14,7 +14,9 @@ font-style: normal;
 
 body {
 font-family: 'Georgia', serif;
-
+font-size: 100%;
+padding:0;
+margin:0;
 }
 
 h1, h2, h3 {
@@ -55,13 +57,36 @@ width: 222px;
 height: 93px;
 display: block;
 position: relative;
-margin: 0 auto;
+margin: 40px auto;
 }
 
 /* navigation */
+nav {
+border-top: solid 1px #cfcfcf;
+border-bottom: solid 1px #cfcfcf;
+}
 
-nav ul li a {
+nav ul {
+margin: 0;
+padding: 0;
+text-align: center;
+}
+
+nav ul li {
+display: inline-block;
+padding: 10px 20px;
+}
+
+nav ul li a, nav ul li a:link, nav ul li a:visited {
 font-family: 'junctionRegular';
 text-transform: uppercase;
 color:#cfcfcf;
+font-size: 1.125em;
+letter-spacing: .05em;
+padding-top: 11px;
+}
+
+nav ul li a:active, nav ul li a:hover {
+color: black;
+border-top: solid 3px black;
 }
