@@ -202,6 +202,7 @@ background:url('../img/footer-bg.png');
 background-repeat: repeat-x;
 width:100%;
 height:333px;
+box-shadow: inset 1px 4px 9px -6px; 
 }
 
 footer ul {
