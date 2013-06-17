@@ -144,10 +144,22 @@ color:#2f2e46;
 margin-bottom: 10px;
 }
 
-/* sub navigation special features */
 #sidebar ul {
 margin-top: 5px;
 }
+
+#sidebar ul li, 
+#sidebar ul li a, 
+#sidebar ul li:before {
+color:#aaa9ba;
+}
+
+#sidebar ul li:nth-of-type(1) {
+border-top: solid 1px #aaa9ba;
+}
+
+/* sub navigation special features */
+
 
 #sidebar ul li a, 
 #sidebar ul li a:link, 
@@ -156,7 +168,6 @@ footer ul li,
 footer ul li a, 
 footer ul li a:link, 
 footer ul li a:visited {
-color:#aaa9ba;
 line-height: 2.25em;
 font-style: italic;
 }
@@ -168,11 +179,6 @@ footer ul li:active:before {
 content: '\00BB';
 padding-right: 6px;
 margin-left:-15px;
-color:#aaa9ba;
-}
-
-#sidebar ul li:nth-of-type(1) {
-border-top: solid 1px #aaa9ba;
 }
 
 /* search bar */
@@ -211,6 +217,11 @@ display: inline-block;
 vertical-align: top;
 margin-top: 30px;
 }
+footer ul li, 
+footer ul li a, 
+footer ul li:before {
+color:#4c4c4c;
+}
 
 footer #logo-footer {
 background: url('../img/messina-logo-opaque.png');
@@ -221,7 +232,6 @@ position:absolute;
 right:0;
 top:35px;
 }
-
 
 /* hidden */
 
