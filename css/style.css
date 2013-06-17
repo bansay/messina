@@ -14,6 +14,7 @@ font-style: normal;
 
 body {
 font-family: 'Georgia', serif;
+color: #4c4c4c;
 font-size: 100%;
 padding:0;
 margin:0;
@@ -21,6 +22,16 @@ margin:0;
 
 h1, h2, h3 {
 font-family: 'junctionRegular', Arial, sans-serif;
+}
+
+h1 {
+	font-size: 1.875em;
+	color: #2f2e46;
+}
+
+h2 {
+	font-size: 1.25em;
+	color: #4c4c4c;
 }
 
 /* global styles */
@@ -31,6 +42,8 @@ text-decoration: none;
 
 ul {
 list-style-type: none;
+margin: 0;
+padding: 0;
 }
 
 /* structural elements */
@@ -40,12 +53,6 @@ width: 940px;
 position: relative; 
 margin: 0 auto;
 }
-
-.hidden {
-display: none;
-visibility: none;
-}
-
 
 
 /* header */
@@ -67,8 +74,6 @@ border-bottom: solid 1px #cfcfcf;
 }
 
 nav ul {
-margin: 0;
-padding: 0;
 text-align: center;
 }
 
@@ -89,4 +94,50 @@ padding-top: 11px;
 nav ul li a:active, nav ul li a:hover {
 color: black;
 border-top: solid 3px black;
+}
+
+/* content div */
+
+#content {
+width: 700px;
+float:left;
+}
+
+#content p {
+-moz-column-count:2; /* Firefox */
+-webkit-column-count:2; /* Safari and Chrome */
+column-count:2;
+-moz-column-gap:40px; /* Firefox */
+-webkit-column-gap:40px; /* Safari and Chrome */
+column-gap:40px;
+}
+
+/* sidebar div */
+
+#sidebar {
+width: 220px;
+float:right;
+}
+
+#sidebar span {
+	font-family: 'junctionRegular';
+	font-size:1.125em;
+	color:#2f2e46;
+}
+
+
+
+/* footer */
+footer {
+	clear:both;
+}
+
+/* clearfix and hidden */
+
+
+
+
+.hidden {
+position: fixed;
+top:-999px;
 }
