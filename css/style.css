@@ -209,8 +209,8 @@ input[type=text] {
 /* footer */
 footer {
 	clear: both;
-	background: url('../img/footer-bg.png');
-	background-repeat: repeat-x;
+	background: url('../img/footer-bg-repeat.png');
+	background-repeat: repeat;
 	width: 100%;
 	height: 333px;
 	box-shadow: inset 1px 4px 9px -6px; 
