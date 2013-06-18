@@ -229,11 +229,13 @@ footer {
 }
 
 footer ul {
-	width:30%;
+	width: 220px;
 	display: inline-block;
 	vertical-align: top;
 	margin-top: 30px;
+	margin-right: 20px;
 }
+
 footer li, 
 footer li a, 
 footer li:before {
