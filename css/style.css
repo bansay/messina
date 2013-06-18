@@ -68,7 +68,6 @@ p {
 	margin: 0 auto;
 }
 
-
 /* header */
 
 header #logo-header {
@@ -115,14 +114,14 @@ nav ul li a:active, nav ul li a:hover {
 #page {
 	margin-top: 40px;
 	min-height: 100%;
-	height:auto;
+	height: auto;
 }
 
 /* content div */
 
 #content {
 	width: 660px;
-	float:left;
+	float: left;
 }
 
 #content p {
@@ -193,27 +192,27 @@ form {
 }
 
 input[type=text] {
-	height:30px;
+	height: 30px;
 	border:solid 1px #cfcfcf;
-	padding:0 5px;
+	padding: 0 5px;
 }
 
 #sidebar #search {
-	width:60px;
-	height:30px;
+	width: 60px;
+	height: 30px;
 	border: solid 1px #cfcfcf;
-	background:white;
-	color:#cfcfcf;
+	background: white;
+	color: #cfcfcf;
 }
 
 
 /* footer */
 footer {
-	clear:both;
-	background:url('../img/footer-bg.png');
+	clear: both;
+	background: url('../img/footer-bg.png');
 	background-repeat: repeat-x;
-	width:100%;
-	height:333px;
+	width: 100%;
+	height: 333px;
 	box-shadow: inset 1px 4px 9px -6px; 
 }
 
@@ -226,22 +225,22 @@ footer ul {
 footer ul li, 
 footer ul li a, 
 footer ul li:before {
-	color:#4c4c4c;
+	color: #4c4c4c;
 }
 
 footer #logo-footer {
 	background: url('../img/messina-logo-opaque.png');
 	background-repeat: no-repeat;
-	width:179px;
-	height:75px;
-	position:absolute;
-	right:0;
-	top:35px;
+	width: 179px;
+	height: 75px;
+	position: absolute;
+	right: 0;
+	top: 35px;
 }
 
 /* hidden */
 
 .hidden {
 	position: fixed;
-	top:-999px;
+	top: -999px;
 }
