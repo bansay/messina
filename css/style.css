@@ -221,11 +221,16 @@ input[type=text] {
 /* footer */
 footer {
 	clear: both;
-	background: url('../img/footer-bg-repeat.png');
+	/*background: -webkit-gradient(linear, 0% 0%, 0% 100%, 
+		from(rgba(0,0,0,0.08)), 
+		color-stop(3%, transparent)), 
+		url('../img/footer-bg-repeat.png');*/
+		background-image: -webkit-linear-gradient(top, rgba(0,0,0,0.55) -20%,rgba(0,1,0,0) 3%,rgba(0,0,0,0) 100%), 
+		url(../img/footer-bg-repeat.png);
 	background-repeat: repeat;
 	width: 100%;
 	height: 333px;
-	box-shadow: inset 1px 4px 9px -6px; 
+	/*box-shadow: inset 1px 4px 9px -6px; */
 }
 
 footer ul {
