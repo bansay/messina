@@ -100,11 +100,15 @@ nav {
 	border-bottom: solid 1px #cfcfcf;
 	border-top: solid 1px #cfcfcf;
 	text-align: center;
+	padding:12px 0 11px;
 }
 
 #nav-primary li {
 	display: inline-block;
-	padding: 10px 24px;
+	margin-right: 45px;
+}
+#nav-primary li:last-of-type {
+	margin-right: 0;
 }
 
 #nav-primary li a, 
@@ -114,7 +118,7 @@ nav {
 	font-family: 'junctionRegular';
 	font-size: 1.125em;
 	letter-spacing: .05em;
-	padding: 11px 0;
+	padding: 12px 0 11px;
 	text-transform: uppercase;
 }
 
