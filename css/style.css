@@ -64,7 +64,7 @@ p {
 	margin: 0 auto 40px;
 }
 
-/* structural elements */
+/* main wrapper */
 
 .container {
 	width: 940px; 
@@ -91,14 +91,14 @@ nav {
 	text-align: center;
 }
 
-nav li {
+#nav-primary li {
 	display: inline-block;
 	padding: 10px 24px;
 }
 
-nav li a, 
-nav li a:link, 
-nav li a:visited {
+#nav-primary li a, 
+#nav-primary li a:link, 
+#nav-primary li a:visited {
 	color:#cfcfcf;
 	font-family: 'junctionRegular';
 	font-size: 1.125em;
@@ -107,12 +107,13 @@ nav li a:visited {
 	text-transform: uppercase;
 }
 
-nav li a:active, nav ul li a:hover {
+#nav-primary li a:active, 
+#nav-primary li a:hover {
 	color: black;
 	border-top: solid 3px black;
 }
 
-/* main content section */
+/* #page and clearfix */
 
 #page {
 	margin-top: 40px;
@@ -133,6 +134,8 @@ nav li a:active, nav ul li a:hover {
 	float: right;
 }
 
+/* main header */
+
 .title {
 	font-family: 'junctionRegular';
 	font-size: 1.125em;
@@ -140,17 +143,19 @@ nav li a:active, nav ul li a:hover {
 	margin-bottom: 10px;
 }
 
-#sidebar .navSide {
+/* secondary nav sidebar */
+
+#sidebar  #nav-secondary {
 	margin-top: 5px;
 }
 
-.navSide li, 
-.navSide li a, 
-.navSide li:before {
+#nav-secondary li, 
+#nav-secondary li a, 
+#nav-secondary li:before {
 	color: #aaa9ba;
 }
 
-.navSide li:nth-of-type(1) {
+#nav-secondary li:nth-of-type(1) {
 	border-top: solid 1px #aaa9ba;
 }
 
@@ -174,7 +179,7 @@ nav li a:active, nav ul li a:hover {
 
 
 
-/* sub navigation special features */
+/* sub navigation global features */
 
 
 #sidebar li a, 
@@ -187,7 +192,6 @@ nav li a:active, nav ul li a:hover {
 	line-height: 2.25em;
 	font-style: italic;
 	text-transform: capitalize;
-	font-size:1em;
 }
 
 #sidebar li:hover:before, 
