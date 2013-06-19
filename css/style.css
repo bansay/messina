@@ -36,13 +36,13 @@ h6 {
 	padding: 0;
 }
 
-h1 {
+#content h2 {
 	font-size: 1.875em;
 	color: #2f2e46;
 	margin: 0 auto 30px;
 }
 
-h2 {
+#content h3 {
 	font-size: 1.25em;
 	color: #4c4c4c;
 	margin: 0 auto 25px;
@@ -201,10 +201,10 @@ footer li:active:before {
 
 /* search bar */
 
-form {
+#search {
 	margin-bottom: 30px;
 }
-input {
+#search input {
 	font-family: 'junctionRegular';
 	border: solid 1px #d8e3e8;
 	background: white;
@@ -212,7 +212,7 @@ input {
 	margin:0;
 }
 
-input[type=text] {
+#search input[type=text] {
 	height: 30px;
 	width: 140px;
 	padding: 0 5px;
