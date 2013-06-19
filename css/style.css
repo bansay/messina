@@ -85,6 +85,10 @@ p {
 
 /* header */
 
+#main-header {
+	margin: 30px auto 20px;
+}
+
 #logo-primary {
 	background: url('../img/messina-logo.png');
 	background-repeat: no-repeat;
@@ -92,7 +96,7 @@ p {
 	height: 93px;
 	display: block;
 	position: relative;
-	margin: 30px auto 20px;
+	margin: 0 auto;
 }
 
 /* primary navigation */
