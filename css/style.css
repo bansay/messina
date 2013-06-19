@@ -220,7 +220,7 @@ input[type=text] {
 
 
 /* footer */
-footer {
+#mainFooter {
 	clear: both;
 	background: -webkit-linear-gradient(top, rgba(0,0,0,0.7) -10%,rgba(0,0,0,0) 3%), url(../img/footer-bg-repeat.png);
 	background: -moz-linear-gradient(top, rgba(0,0,0,0.7) -10%, rgba(0,0,0,0) 3%), url(../img/footer-bg-repeat.png);
@@ -233,7 +233,7 @@ footer {
 	/*box-shadow: inset 1px 4px 9px -6px; */
 }
 
-footer ul {
+#mainFooter ul {
 	width: 220px;
 	display: inline-block;
 	vertical-align: top;
@@ -241,13 +241,13 @@ footer ul {
 	margin-right: 20px;
 }
 
-footer li, 
-footer li a, 
-footer li:before {
+#mainFooter li, 
+#mainFooter li a, 
+#mainFooter li:before {
 	color: #4c4c4c;
 }
 
-#logo-footer {
+#logoFooter {
 	background: url('../img/messina-logo.png');
 	opacity: 0.17;
 	background-repeat: no-repeat;
