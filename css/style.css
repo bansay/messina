@@ -131,18 +131,19 @@ nav li a:active, nav ul li a:hover {
 /* content div */
 
 #content {
-	width: 660px;
+	width: 700px;
 	float: left;
 }
 
 #content p {
+	display: inline-block;
 	text-align: justify;
-	-moz-column-count: 2; /* Firefox */
-	-webkit-column-count: 2; /* Safari and Chrome */
-	column-count: 2;
+	column-gap: 60px;
 	-moz-column-gap: 60px; /* Firefox */
 	-webkit-column-gap: 60px; /* Safari and Chrome */
-	column-gap: 60px;
+	-webkit-columns:300px 2;
+	-moz-columns:300px 2; 
+	-moz-column-count: 2; /* Firefox */	
 }
 
 /* sidebar div */
