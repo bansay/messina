@@ -140,17 +140,17 @@ nav li a:active, nav ul li a:hover {
 	margin-bottom: 10px;
 }
 
-#sidebar ul {
+#sidebar .navSide {
 	margin-top: 5px;
 }
 
-#sidebar li, 
-#sidebar li a, 
-#sidebar li:before {
+.navSide li, 
+.navSide li a, 
+.navSide li:before {
 	color: #aaa9ba;
 }
 
-#sidebar li:nth-of-type(1) {
+.navSide li:nth-of-type(1) {
 	border-top: solid 1px #aaa9ba;
 }
 
