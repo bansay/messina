@@ -120,6 +120,12 @@ nav li a:active, nav ul li a:hover {
 	height: auto;
 }
 
+#page:after {
+	display: table;
+	clear: both;
+	content:"";
+}
+
 /* content div */
 
 #content {
