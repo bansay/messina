@@ -134,7 +134,9 @@ nav {
 }
 
 #nav-secondary a:hover:before,
-#main-footer li a:hover:before {
+#nav-secondary a:active:before,
+#main-footer li a:hover:before,
+#main-footer li a:active:before {
 	content: '\00BB';	
 }
 
@@ -170,7 +172,8 @@ nav {
 #nav-secondary li:nth-of-type(1) {
 	border-top: solid 1px #b2b1c1;
 }
-#nav-secondary a:hover:before {
+#nav-secondary a:hover:before,
+#nav-secondary a:active:before {
 	margin-left: -15px;
 	padding-right: 6px;
 }
@@ -246,7 +249,8 @@ nav {
 	color: #4c4c4c;
 	font-size: 0.875em;
 }
-#main-footer li a:hover:before {
+#main-footer li a:hover:before,
+#main-footer li a:active:before {
 	margin-left: -12px;
 	padding-right: 4px;
 }
