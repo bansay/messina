@@ -222,13 +222,12 @@ input[type=text] {
 /* footer */
 footer {
 	clear: both;
-	/*background: -webkit-gradient(linear, 0% 0%, 0% 100%, 
-		from(rgba(0,0,0,0.08)), 
-		color-stop(3%, transparent)), 
-		url('../img/footer-bg-repeat.png');*/
-		background-image: -webkit-linear-gradient(top, rgba(0,0,0,0.55) -20%,rgba(0,1,0,0) 3%,rgba(0,0,0,0) 100%), 
-		url(../img/footer-bg-repeat.png);
-	background-repeat: repeat;
+	background: -webkit-linear-gradient(top, rgba(0,0,0,0.7) -10%,rgba(0,0,0,0) 3%), url(../img/footer-bg-repeat.png);
+	background: -moz-linear-gradient(top, rgba(0,0,0,0.7) -10%, rgba(0,0,0,0) 3%), url(../img/footer-bg-repeat.png);
+	background: -o-linear-gradient(top, rgba(0,0,0,0.7) -10%,rgba(0,0,0,0) 3%), url(../img/footer-bg-repeat.png);
+	background:	-ms-linear-gradient(top, rgba(0,0,0,0.7) -10%,rgba(0,0,0,0) 3%), url(../img/footer-bg-repeat.png);
+	background:	linear-gradient(to bottom, rgba(0,0,0,0.7) -10%,rgba(0,0,0,0) 3%), url(../img/footer-bg-repeat.png);
+	border-top: solid 1px #cfcfcf;
 	width: 100%;
 	height: 333px;
 	/*box-shadow: inset 1px 4px 9px -6px; */
@@ -249,8 +248,10 @@ footer li:before {
 }
 
 #logo-footer {
-	background: url('../img/messina-logo-opaque.png');
+	background: url('../img/messina-logo.png');
+	opacity: 0.17;
 	background-repeat: no-repeat;
+	background-size: 100% 100%;
 	width: 179px;
 	height: 75px;
 	position: absolute;
