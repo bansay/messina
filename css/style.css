@@ -1,13 +1,5 @@
 /* messina styles, authored by brittany ansay */
 
-/*box sizing taken from paul irish, a way to always set width no matter what padding and margin is*/
-
-* { 
-	-moz-box-sizing: border-box; 
-	-webkit-box-sizing: border-box; 
-	box-sizing: border-box; 
-}
-
 html, 
 body {
 	height:100%;
@@ -136,14 +128,16 @@ nav li a:active, nav ul li a:hover {
 }
 
 #content p {
-	display: inline-block;
-	text-align: justify;
-	column-gap: 60px;
-	-moz-column-gap: 60px; /* Firefox */
-	-webkit-column-gap: 60px; /* Safari and Chrome */
-	-webkit-columns:300px 2;
-	-moz-columns:300px 2; 
-	-moz-column-count: 2; /* Firefox */	
+	-webkit-column-count: 2;
+    -moz-column-count: 2;
+    column-count: 2;
+    -webkit-column-width: 300px;
+    -moz-column-width: 300px;
+    column-width: 300px;
+    -webkit-column-gap: 60px;
+    -moz-column-gap: 60px;
+    column-gap: 60px;
+    text-align: justify;
 }
 
 /* sidebar div */
