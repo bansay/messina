@@ -196,19 +196,26 @@ footer li:active:before {
 form {
 	margin-bottom: 30px;
 }
+input {
+	font-family: 'junctionRegular';
+	border: solid 1px #d8e3e8;
+	background: white;
+	color: #90989b;
+	margin:0;
+}
 
 input[type=text] {
 	height: 30px;
-	border:solid 1px #cfcfcf;
+	width: 140px;
 	padding: 0 5px;
+	margin: 0 4px 0 0;
 }
 
-#search {
+#search input[type=submit] {
 	width: 60px;
-	height: 30px;
-	border: solid 1px #cfcfcf;
-	background: white;
-	color: #cfcfcf;
+	height: 32px;
+	text-transform: uppercase;
+	cursor: pointer;	
 }
 
 
