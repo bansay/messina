@@ -36,6 +36,17 @@ h6 {
 	padding: 0;
 }
 
+/* main header */
+
+.title {
+	font-family: 'junctionRegular';
+	font-size: 1.125em;
+	color: #2f2e46;
+	margin-bottom: 10px;
+}
+
+/* content header */
+
 #content h2 {
 	font-size: 1.875em;
 	color: #2f2e46;
@@ -74,7 +85,7 @@ p {
 
 /* header */
 
-#logoHeader {
+#logo-primary {
 	background: url('../img/messina-logo.png');
 	background-repeat: no-repeat;
 	width: 222px;
@@ -84,7 +95,7 @@ p {
 	margin: 30px auto 20px;
 }
 
-/* navigation */
+/* primary navigation */
 nav {
 	border-bottom: solid 1px #cfcfcf;
 	border-top: solid 1px #cfcfcf;
@@ -113,7 +124,21 @@ nav {
 	border-top: solid 3px black;
 }
 
-/* #page and clearfix */
+/* secondary nav and main footer nav global styles */
+
+#nav-secondary,
+#main-footer li a {
+	font-style: italic;
+	text-transform: capitalize;
+	line-height: 2.25em;
+}
+
+#nav-secondary a:hover:before,
+#main-footer li a:hover:before {
+	content: '\00BB';	
+}
+
+/* page and clearfix */
 
 #page {
 	margin-top: 40px;
@@ -134,73 +159,20 @@ nav {
 	float: right;
 }
 
-/* main header */
-
-.title {
-	font-family: 'junctionRegular';
-	font-size: 1.125em;
-	color: #2f2e46;
-	margin-bottom: 10px;
-}
-
-/* secondary nav sidebar */
-
 #sidebar  #nav-secondary {
 	margin-top: 5px;
 }
 
-#nav-secondary li, 
-#nav-secondary li a, 
-#nav-secondary li:before {
+#nav-secondary a {
 	color: #aaa9ba;
 }
 
 #nav-secondary li:nth-of-type(1) {
-	border-top: solid 1px #aaa9ba;
+	border-top: solid 1px #b2b1c1;
 }
-
-/* content div */
-
-#content {
-	width: 700px;
-	float: left;
-}
-
-.columned p {
-	-webkit-column-count: 2;
-    -moz-column-count: 2;
-    column-count: 2;
-    -webkit-column-gap: 60px;
-    -moz-column-gap: 60px;
-    column-gap: 60px;
-    text-align: justify;
-    padding-right: 40px;
-}
-
-
-
-/* sub navigation global features */
-
-
-#sidebar li a, 
-#sidebar li a:link, 
-#sidebar li a:visited,
-#mainFooter li, 
-#mainFooter li a, 
-#mainFooter li a:link, 
-#mainFooter li a:visited {
-	line-height: 2.25em;
-	font-style: italic;
-	text-transform: capitalize;
-}
-
-#sidebar li:hover:before, 
-#sidebar li:active:before,
-#mainFooter li:hover:before,
-#mainFooter li:active:before {
-	content: '\00BB';
-	padding-right: 6px;
+#nav-secondary a:hover:before {
 	margin-left: -15px;
+	padding-right: 6px;
 }
 
 /* search bar */
@@ -230,9 +202,26 @@ nav {
 	cursor: pointer;	
 }
 
+/* content div */
+
+#content {
+	width: 700px;
+	float: left;
+}
+
+.columned p {
+	-webkit-column-count: 2;
+    -moz-column-count: 2;
+    column-count: 2;
+    -webkit-column-gap: 60px;
+    -moz-column-gap: 60px;
+    column-gap: 60px;
+    text-align: justify;
+    padding-right: 40px;
+}
 
 /* footer */
-#mainFooter {
+#main-footer {
 	clear: both;
 	background: -webkit-linear-gradient(top, rgba(0,0,0,0.7) -10%,rgba(0,0,0,0) 3%), url(../img/footer-bg-repeat.png);
 	background: -moz-linear-gradient(top, rgba(0,0,0,0.7) -10%, rgba(0,0,0,0) 3%), url(../img/footer-bg-repeat.png);
@@ -245,7 +234,7 @@ nav {
 	/*box-shadow: inset 1px 4px 9px -6px; */
 }
 
-#mainFooter ul {
+#main-footer ul {
 	width: 220px;
 	display: inline-block;
 	vertical-align: top;
@@ -253,13 +242,16 @@ nav {
 	margin-right: 20px;
 }
 
-#mainFooter li, 
-#mainFooter li a, 
-#mainFooter li:before {
+#main-footer li a {
 	color: #4c4c4c;
+	font-size: 0.875em;
+}
+#main-footer li a:hover:before {
+	margin-left: -12px;
+	padding-right: 4px;
 }
 
-#logoFooter {
+#logo-secondary {
 	background: url('../img/messina-logo.png');
 	opacity: 0.17;
 	background-repeat: no-repeat;
