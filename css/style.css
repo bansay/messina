@@ -112,6 +112,20 @@ nav li a:active, nav ul li a:hover {
 	border-top: solid 3px black;
 }
 
+/* main content section */
+
+#page {
+	margin-top: 40px;
+	min-height: 100%;
+	height: auto;
+}
+
+#page:after {
+	display: table;
+	clear: both;
+	content:"";
+}
+
 /* sidebar div */
 
 #sidebar {
@@ -138,20 +152,6 @@ nav li a:active, nav ul li a:hover {
 
 #sidebar li:nth-of-type(1) {
 	border-top: solid 1px #aaa9ba;
-}
-
-/* main content section */
-
-#page {
-	margin-top: 40px;
-	min-height: 100%;
-	height: auto;
-}
-
-#page:after {
-	display: table;
-	clear: both;
-	content:"";
 }
 
 /* content div */
