@@ -104,7 +104,6 @@ nav {
 	border-bottom: solid 1px #cfcfcf;
 	border-top: solid 1px #cfcfcf;
 	text-align: center;
-	padding:12px 0 11px;
 }
 
 #nav-primary li {
@@ -122,8 +121,9 @@ nav {
 	font-family: 'junctionRegular';
 	font-size: 1.125em;
 	letter-spacing: .05em;
-	padding: 12px 0 11px;
 	text-transform: uppercase;
+	line-height: 40px;
+	padding: 10px 0 11px;
 }
 
 #nav-primary li a:active, 
