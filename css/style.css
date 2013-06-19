@@ -112,6 +112,34 @@ nav li a:active, nav ul li a:hover {
 	border-top: solid 3px black;
 }
 
+/* sidebar div */
+
+#sidebar {
+	width: 220px;
+	float: right;
+}
+
+.title {
+	font-family: 'junctionRegular';
+	font-size: 1.125em;
+	color: #2f2e46;
+	margin-bottom: 10px;
+}
+
+#sidebar ul {
+	margin-top: 5px;
+}
+
+#sidebar li, 
+#sidebar li a, 
+#sidebar li:before {
+	color: #aaa9ba;
+}
+
+#sidebar li:nth-of-type(1) {
+	border-top: solid 1px #aaa9ba;
+}
+
 /* main content section */
 
 #page {
@@ -144,33 +172,7 @@ nav li a:active, nav ul li a:hover {
     padding-right: 40px;
 }
 
-/* sidebar div */
 
-#sidebar {
-	width: 220px;
-	float: right;
-}
-
-p.title {
-	font-family: 'junctionRegular';
-	font-size: 1.125em;
-	color: #2f2e46;
-	margin-bottom: 10px;
-}
-
-#sidebar ul {
-	margin-top: 5px;
-}
-
-#sidebar li, 
-#sidebar li a, 
-#sidebar li:before {
-	color: #aaa9ba;
-}
-
-#sidebar li:nth-of-type(1) {
-	border-top: solid 1px #aaa9ba;
-}
 
 /* sub navigation special features */
 
