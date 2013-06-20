@@ -238,7 +238,7 @@ nav {
 	height: 220px;
 	display: block;
 	float: left;
-	margin: 0 20px 0 0;
+	margin: 0 20px 20px 0;
 	position: relative;
 }
 
@@ -305,7 +305,9 @@ nav {
 }
 
 #product-list li:hover span:hover {
-	box-shadow: 2px 0 5px rgba(0,0,0,.3);
+	-moz-box-shadow: 0 0 5px rgba(0,0,0,.3);
+	-webkit-box-shadow: 0 0 5px rgba(0,0,0,.3);
+	box-shadow: 0 0 5px rgba(0,0,0,.3);
 }
 
 /* footer */
