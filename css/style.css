@@ -145,7 +145,8 @@ nav {
 #nav-secondary a:active:before,
 #main-footer li a:hover:before,
 #main-footer li a:active:before {
-	content: '\00BB';	
+	content: '\00BB';
+	position: absolute;	
 }
 
 /* page and clearfix */
@@ -184,7 +185,6 @@ nav {
 #nav-secondary a:hover:before,
 #nav-secondary a:active:before {
 	margin-left: -15px;
-	padding-right: 6px;
 }
 
 /* search bar */
@@ -287,7 +287,6 @@ nav {
 #main-footer li a:hover:before,
 #main-footer li a:active:before {
 	margin-left: -12px;
-	padding-right: 4px;
 }
 
 #logo-secondary {
