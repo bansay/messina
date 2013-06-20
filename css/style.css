@@ -230,37 +230,24 @@ nav {
     text-align: justify;
     padding-right: 40px;
 }
-/* content product list */
+/* product list */
+
 #product-list {
-	position: relative;
+	position:relative;
 }
 
 #product-list li {
 	width: 220px;
 	height: 220px;
-	float: left;
 	display: block;
+	float: left;
 	margin: 0 20px 0 0;
-	padding: 0;
-}
-#product-list a {
-	width: 100%;
-	height: 100%;
-}
-#product-list img,
-#product-list h2, 
-#product-list span, {
-	position: absolute;
-}
-
-#product-list h2 {
-	color: #f4f4f4;
-	font-size: 0.875em;
 }
 
 #product-list li:nth-of-type(3n) {
 	margin: 0;
 }
+
 /* footer */
 #main-footer {
 	clear: both;
