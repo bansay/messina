@@ -232,6 +232,11 @@ nav {
     padding-right: 40px;
 }
 /* product list */
+#product-list:after {
+	display: table;
+	clear: both;
+	content:"";
+}
 
 #product-list li {
 	width: 220px;
