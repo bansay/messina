@@ -329,6 +329,25 @@ nav {
 	box-shadow: 0 0 5px rgba(0,0,0,.3);
 }
 
+/* quickview */
+
+#quickview {
+	/*display: none;*/
+	background: #ffffff;
+	-moz-box-shadow: 0 0 10px #888;
+	-webkit-box-shadow: 0 0 10px#888;
+	box-shadow: 0 0 10px #888;
+	-webkit-border-radius: 10px;
+	-moz-border-radius: 10px;
+	border-radius: 10px;
+	width: 460px;
+	height: 460px;
+	left: 240px;
+	position: absolute;
+	top: 0;
+	z-index: 100;
+}
+
 /* footer */
 #main-footer {
 	clear: both;
