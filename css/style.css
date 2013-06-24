@@ -219,6 +219,13 @@ input[type=submit] {
 }
 #cart input[type=submit] {
 	width: 120px;
+	margin-top: -20px;
+}
+
+#cart p {
+	font-family: 'junctionRegular';
+	font-size: 112.5%;
+	text-align: center;
 }
 
 /* content div */
@@ -372,10 +379,7 @@ input[type=submit] {
 #quickview p {
 	margin: 0 auto 30px;
 }
-#cart p {
-	font-family: 'junctionRegular';
-	font-size: 112.5%;
-}
+
 /* footer */
 #main-footer {
 	clear: both;
