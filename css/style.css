@@ -346,6 +346,13 @@ nav {
 	position: absolute;
 	top: 0;
 	z-index: 100;
+	padding: 20px;
+}
+#quickview h3 {
+	padding: 20px 0;
+}
+#quickview p {
+	font-size: 87.5%;
 }
 
 /* footer */
