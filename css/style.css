@@ -190,8 +190,15 @@ nav {
 
 /* search bar and add to cart */
 
-#search {
-	margin-bottom: 30px;
+#cart input[type=submit] {
+	width: 120px;
+	margin-top: -20px;
+}
+
+#cart p {
+	font-family: 'junctionRegular';
+	font-size: 112.5%;
+	text-align: center;
 }
 
 input {
@@ -203,6 +210,17 @@ input {
 	padding: 2px;
 	background: #fff;
 }
+
+input[type=submit] {	
+	height: 36px;
+	text-transform: uppercase;
+	float: right;
+}
+
+#search {
+	margin-bottom: 30px;
+}
+
 #search input[type=text] {
 	width:140px;
 	height: 30px;
@@ -210,22 +228,6 @@ input {
 }
 #search input[type=submit] {
 	width: 65px;
-}
-
-input[type=submit] {	
-	height: 36px;
-	text-transform: uppercase;
-	float: right;
-}
-#cart input[type=submit] {
-	width: 120px;
-	margin-top: -20px;
-}
-
-#cart p {
-	font-family: 'junctionRegular';
-	font-size: 112.5%;
-	text-align: center;
 }
 
 /* content div */
