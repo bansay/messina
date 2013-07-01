@@ -185,7 +185,7 @@ nav {
 }
 #nav-secondary a:hover:before,
 #nav-secondary a:active:before {
-	margin-left: -15px;
+	margin-left: -12px;
 }
 
 /* search bar and add to cart */
