@@ -143,6 +143,10 @@ $(".quickview-btn").click(function(event) {
 	$("#quickview").css("left", position.left+240).css("top", position.top).removeClass("hide");
 });
 
+$("#zoom").mousemove(function(e) {
+	var clientCoords = "( " + e.clientX + ", " + e.clientY + " )";
+	console.log(clientCoords);
+});
 
 </script>
 
