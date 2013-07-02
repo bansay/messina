@@ -134,15 +134,13 @@
 
 
 <script>
-$(".quickview-btn").mouseover(function(event) {
+$(".quickview-btn").click(function(event) {
 	event.preventDefault();
 	var position = $(event.currentTarget).parents("li").position();
 	// console.log(position.left);
 	$("#quickview").css("left", position.left+240).css("top", position.top).removeClass("hide");
 });
-$(".quickview-btn").mouseout(function(event) {
-	$("#quickview").addClass("hide");
-});
+
 
 </script>
 
