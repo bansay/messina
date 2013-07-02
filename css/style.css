@@ -322,7 +322,8 @@ input[type=submit] {
 	bottom: 12px;
 }
 
-#product-list li:hover span {
+#product-list li:hover span,
+#product-list li.hover span {
 	display: block;
 	width: 100px;
 	line-height: 30px;
