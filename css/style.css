@@ -404,6 +404,16 @@ input[type=submit] {
 	top:90px;
 	left:0;
 }
+#zoom {
+	width: 421px;
+	height:204px;
+	overflow:hidden;
+}
+#zoom img {
+	position:relative;
+	top:0;
+	left:0;
+}
 
 /* footer */
 #main-footer {
