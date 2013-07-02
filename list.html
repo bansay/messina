@@ -90,7 +90,7 @@
 					</a>
 				</li>
 			</ol>
-			<article id="quickview" class="hide">
+			<article id="quickview">
 				<div id="zoom">
 					<img src="img/list/table-big-sir-detail.png" alt="Big Sur Dining Table" />
 				</div>
@@ -130,25 +130,34 @@
 		</div><!-- .container-->
 	</footer>
 
-<script src="//ajax.googleapis.com/ajax/libs/jquery/1.10.1/jquery.min.js"></script>
+	<script src="//ajax.googleapis.com/ajax/libs/jquery/1.10.1/jquery.min.js"></script>
 
 
 
 
-<script>
-$(".quickview-btn").click(function(event) {
-	event.preventDefault();
-	var position = $(event.currentTarget).parents("li").position();
-	// console.log(position.left);
-	$("#quickview").css("left", position.left+240).css("top", position.top).removeClass("hide");
-});
+	<script>
 
-$("#zoom").mousemove(function(e) {
-	var clientCoords = "( " + e.clientX + ", " + e.clientY + " )";
-	console.log(clientCoords);
-});
+		var $quickview = $("#quickview");
 
-</script>
+		$(".quickview-btn").click(function(event) {
+			event.preventDefault();
+			var position = $(this).parents("li").addClass('hover').position();
+			$quickview.removeClass('right');
+			var left = position.left+240;
+			if (left > 480) {
+				left = 0;
+				$quickview.addClass('right');
+			}
+			$quickview.css("left", left).css("top", position.top).fadeIn();
+		});
+
+		$("#zoom").mousemove(function(e) {
+			var clientCoords = "( " + e.clientX + ", " + e.clientY + " )";
+			console.log(clientCoords);
+
+		});
+
+	</script>
 
 </body>
 
