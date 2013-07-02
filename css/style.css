@@ -349,7 +349,6 @@ input[type=submit] {
 /* quickview */
 
 #quickview {
-	/*display: none;*/
 	background: #ffffff;
 	-moz-box-shadow: 0px 0px 8px rgba(0, 0, 0, .26);
 	-webkit-box-shadow: 0px 0px 8px rgba(0, 0, 0, .26);
@@ -453,4 +452,7 @@ input[type=submit] {
 .hidden {
 	position: fixed;
 	top: -999px;
+}
+.hide {
+	display:none;
 }
