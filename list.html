@@ -148,11 +148,12 @@
 				left = 0;
 				$quickview.addClass('right');
 			}
-			$quickview.css("left", left).css("top", position.top).fadeIn();
-			$quickview.delay(200).mouseleave(function(){
-				$quickview.fadeOut();
+			$quickview.css("left", left).css("top", position.top).fadeIn(500);
+			$quickview.mouseleave(function(){
+				$quickview.fadeOut(500);
 				$("#product-list li").removeClass('hover');
 			})
+
 		});
 
 
