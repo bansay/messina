@@ -144,8 +144,8 @@
 			event.preventDefault();
 			var position = $(this).parents("li").position();
 			_activeItem = $(this).parents("li").addClass('hover');
-			_activeItem = $(this).parents("li").attr('data-hovering', 'true');
-			console.log(_activeItem.data('hovering'));
+			// _activeItem = $(this).parents("li").attr('data-hovering', 'true');
+			// console.log(_activeItem.data('hovering'));
 			$quickview.removeClass('right');
 			var left = position.left+240;
 			if (left > 480) {
@@ -155,6 +155,7 @@
 			$quickview.css("left", left).css("top", position.top).fadeIn(500);
 
 		});
+
 
 
 		// $("#product-list a").mouseenter(function(){
