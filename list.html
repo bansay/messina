@@ -137,15 +137,13 @@
 
 	<script>
 
-		var $quickview = $("#quickview"),
-			_activeItem;
+		var $quickview = $('#quickview');
 
-		$(".quickview-btn").click(function(event) {
+		$('.quickview-btn').click(function(event) {
 			event.preventDefault();
-			var position = $(this).parents("li").position();
-			_activeItem = $(this).parents("li").addClass('hover');
-			// _activeItem = $(this).parents("li").attr('data-hovering', 'true');
-			// console.log(_activeItem.data('hovering'));
+			var $li = $(this).parents("li");
+			var position = $li.addClass('hover').position();
+
 			$quickview.removeClass('right');
 			var left = position.left+240;
 			if (left > 480) {
@@ -154,15 +152,28 @@
 			}
 			$quickview.css("left", left).css("top", position.top).fadeIn(500);
 
+		})
+		.parents('li') // now we have a jquery nodelist that contains all the LIs
+
+
+		.mouseenter(function () {
+			$(this).data('hovering',true);
+		})
+		.mouseleave(function () {
+			$(this).data('hovering', false);
+		})
+		;
+
+		$quickview.mouseleave(function () {
+			setTimeout(function () {
+				var $li = $('li.hover');
+				if (!$li.data('hovering')) {
+					$quickview.fadeOut(500, function () {
+						$li.removeClass('hover');
+					});
+				}
+			}, 200);
 		});
-
-
-
-		// $("#product-list a").mouseenter(function(){
-		// 	$(body).data("hovering", true);
-		// }).mouseleave(function(){
-		// 	$(body).data("hovering", false);
-		// });
 
 
 		// $("#zoom").mousemove(function(e) {
