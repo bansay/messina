@@ -360,9 +360,7 @@ input[type=submit] {
 	-moz-border-radius: 10px;
 	border-radius: 10px;
 	border: 1px solid #9e9e9e;
-	left: 240px;
 	position: absolute;
-	top: 0;
 	z-index: 100;
 	padding: 20px;
 	font-size: 87.5%;
@@ -383,8 +381,11 @@ input[type=submit] {
 #quickview form {
 	float: right;
 }
-#quickview p {
+#product-list #quickview p {
 	margin: 0 auto 30px;
+	position:relative;
+	color:black;
+	text-align: left;
 }
 
 #quickview:before {
