@@ -300,10 +300,10 @@ input[type=submit] {
 	display: none;
 }
 
-#product-list li:hover h2,
-#product-list li.hover h2,
-#product-list li:hover p,
-#product-list li.hover p {
+#product-list > li:hover h2,
+#product-list > li.hover h2,
+#product-list > li:hover p,
+#product-list > li.hover p {
 	margin: 0;
 	display: block;
 	color: #f4f4f4;
