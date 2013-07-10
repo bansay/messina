@@ -254,18 +254,18 @@ input[type=submit] {
 }
 
 /* product list */
-#product-list {
-	position: relative;
-}
 
 .product-item, 
 .product-item a {
-	position:relative;
+	/*position:relative;*/
 	width: 220px;
 	height:220px;
 	float:left;
 	margin:0;
 	padding: 0 20px 20px 0;	
+}
+.product-item a {
+	position:relative;
 }
 
 .product-item:nth-of-type(3n) {

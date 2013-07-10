@@ -151,11 +151,11 @@
 
 			if(left>=480){
 
-				$quickview.css('left', left-480).addClass('right');
+				$quickview.css('top', position.top).css('left', left-480).addClass('right');
 				
 			}else{
 
-				$quickview.css('left', left+240);
+				$quickview.css('top', position.top).css('left', left+240);
 
 			}
 
