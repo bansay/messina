@@ -155,6 +155,7 @@
 				
 			}else{
 
+				$quickview.removeClass('right');
 				$quickview.css('top', position.top).css('left', left+240);
 
 			}
@@ -167,7 +168,9 @@
 		$('.product-item').mouseleave(function () {
 			$li = $(this);
 			if ($li.hasClass('hover')) {
-				$quickview = $li.find('#quickview')				
+				
+
+				$quickview = $li.find('#quickview')
 				$quickview.fadeOut(500, function () {
 					$li.removeClass('hover');
 					$quickview.remove();
