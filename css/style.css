@@ -331,6 +331,11 @@ input[type=submit] {
 	font-size: 75%;
 	color:#565656;
 }
+.quickview-btn:hover {
+	-moz-box-shadow: 0 0 5px rgba(0,0,0,.3);
+	-webkit-box-shadow: 0 0 5px rgba(0,0,0,.3);
+	box-shadow: 0 0 5px rgba(0,0,0,.3);
+}
 
 /* quickview */
 
