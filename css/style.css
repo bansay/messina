@@ -160,6 +160,7 @@ nav {
 }
 
 #page:after,
+#content:after,
 #product-list:after,
 .details:after {
 	display: table;
@@ -436,6 +437,10 @@ input[type=submit] {
 	top:0;
 	left:0;
 }
+
+/* detail */
+
+
 
 /* footer */
 #main-footer {
