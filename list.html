@@ -115,7 +115,7 @@
 	</footer>
 
 	<script id="template-quickview" type="text/template">
-		<article id="quickview">
+		<article id="quickview" class="details">
 			<div id="zoom">
 				<img src="img/quickview/table-big-sir-detail.png" alt="Big Sur Dining Table" />
 			</div>
@@ -128,7 +128,7 @@
 				<li>Made in Poland</li>
 			</ul>
 			<form id="cart">
-				<p>$1499</p>
+				<p class="product-cost">$1499</p>
 				<input type="submit" value="Add To Cart" /> 
 			</form>
 		</article>
@@ -165,18 +165,18 @@
 			// return false;
 		});//End Button Click
 
-		$('.product-item').mouseleave(function () {
-			$li = $(this);
-			if ($li.hasClass('hover')) {
+		// $('.product-item').mouseleave(function () {
+		// 	$li = $(this);
+		// 	if ($li.hasClass('hover')) {
 				
 
-				$quickview = $li.find('#quickview')
-				$quickview.fadeOut(500, function () {
-					$li.removeClass('hover');
-					$quickview.remove();
-				});
-			}
-		});
+		// 		$quickview = $li.find('#quickview')
+		// 		$quickview.fadeOut(500, function () {
+		// 			$li.removeClass('hover');
+		// 			$quickview.remove();
+		// 		});
+		// 	}
+		// });
 
 
 	</script>

@@ -160,7 +160,8 @@ nav {
 }
 
 #page:after,
-#product-list:after {
+#product-list:after,
+.details:after {
 	display: table;
 	clear: both;
 	content:"";
@@ -367,14 +368,15 @@ input[type=submit] {
 	color: #434258;
 }
 
-#quickview ul {
+.details ul {
 	float: left;
 }
 
-#quickview form {
+.details form {
 	float: right;
 }
-#quickview p {
+
+.details p {
 	margin: 0 auto 30px;
 	position:relative;
 	color:black;
