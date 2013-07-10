@@ -279,7 +279,7 @@ input[type=submit] {
 	filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#00000000', endColorstr='#a6000000',GradientType=1 ); /* IE6-9 fallback on horizontal gradient */
 	background-clip: content-box;
 }
-.product-item img {
+.product-item a img {
 	z-index: 1;
 }
 
@@ -290,7 +290,7 @@ input[type=submit] {
 
 .item-name,
 .item-cost,
-.product-item img,
+.product-item a img,
 .quickview-btn {
 	position: absolute;
 }
@@ -298,7 +298,6 @@ input[type=submit] {
 .item-name,
 .item-cost,
 .quickview-btn {
-	/*z-index: -2;*/
 	font-family: 'junctionRegular';
 	color:#f4f4f4;
 	text-align: center;
@@ -332,8 +331,6 @@ input[type=submit] {
 	font-size: 75%;
 	color:#565656;
 }
-
-
 
 /* quickview */
 
