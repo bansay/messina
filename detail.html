@@ -109,7 +109,19 @@
 
 	<script>
 
+
 	var $featureImage = $('#feature figure img');
+
+		$('#thumbnail img').hover(
+			function () {
+				var imageSource = $(this).data('large');
+				$featureImage.attr('src', imageSource);
+			},
+			function () {
+			var imageSource = $(this).data('large');
+				$featureImage.attr('src', imageSource);
+			}
+		);
 
 		$("#thumbnail img").click(
 		  function () {
@@ -117,6 +129,7 @@
 		   $featureImage.attr('src', imageSource);
 		  }
 		);
+
 	</script>
 
 </body>
