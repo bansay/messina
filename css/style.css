@@ -510,6 +510,10 @@ figure {
 	padding: 0 20px 0 0;
 }
 
+#thumbnail img:hover {
+	cursor: pointer;
+}
+
 #feature ul li:last-of-type {
 	padding: 0;
 }
