@@ -318,7 +318,8 @@ input[type=submit] {
 
 .item-name {
 	top: 12px;
-	font-size: 100%
+	font-size: 100%;
+	text-transform: capitalize;
 }
 
 .item-cost {
