@@ -278,6 +278,11 @@ input[type=submit] {
 	float: left;
 	z-index: -1;
 }
+#carousal span {
+	font-size: 225%;
+	font-family: 'Helvetica', sans-serif;
+	color:#cb2457;
+}
 
 #carousal h2 {
 	text-transform: uppercase;
