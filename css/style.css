@@ -170,7 +170,7 @@ nav {
 #more-products:after,
 #more-products ul:after,
 #carousal ul:after,
-#slide:after {
+.slide:after {
 	display: table;
 	clear: both;
 	content:"";
@@ -274,16 +274,17 @@ input[type=submit] {
 	height: 315px;
 	width: 100%;
 }
+
 #carousal .container {
-	overflow: hidden;	
+	overflow: hidden;
 }
 
-#slide {
+.slide {
 	float:left;
 	width: 940px;
 }
 
-#slide img {
+.slide img {
 	float:left;
 	z-index: -1;
 	position: relative;
@@ -296,17 +297,17 @@ input[type=submit] {
 	width:380px;
 }
 
-#slide p {
+.slide p {
 	margin-top: 25px;
 	color:#989898;
 	font-size: 87.5%;
 }
 
-#slide p:first-of-type {
+.slide p:first-of-type {
 	font-size: 112.5%;
 }
 
-#slide span {
+.slide span {
 	font-size: 225%;
 	font-family: 'Helvetica', sans-serif;
 	color:#cb2457;
@@ -314,7 +315,7 @@ input[type=submit] {
 	display: block;
 }
 
-#slide h2 {
+.slide h2 {
 	text-transform: uppercase;
 	font-size: 137.5%;
 	color:#989898;

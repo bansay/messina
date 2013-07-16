@@ -27,7 +27,7 @@
 	<div id="carousal">
 		<div class="container">
 			<ul>
-				<li id="slide">
+				<li class="slide">
 					<img src="img/slides/slide-01.png" alt="Select Perfumes &amp; Colognes" title="Select Perfumes &amp; Colognes" />
 					<div class="slide-desc">
 						<span>30% Off</span>
@@ -35,7 +35,7 @@
 						<p>Find great deals on designer scents like Belenciaga or d&rsquo;Armani and more!</p>
 					</div>
 				</li>
-				<li id="slide">
+				<li class="slide">
 					<img src="img/slides/slide-02.png" alt="Luxurious Bamboo Towels" title="Luxurious Bamboo Towels" />
 					<div class="slide-desc">
 						<span>FREE Towels!</span>
@@ -44,7 +44,7 @@
 						<p>Or get 10% off when you purchase 2 or more complete towel sets!</p>
 					</div>
 				</li>
-				<li id="slide">
+				<li class="slide">
 					<img src="img/slides/slide-03.png" alt="Wine Glasses and Accessories" title="Wine Glasses and Accessories" />
 					<div class="slide-desc">
 						<span>25% off</span>
@@ -58,9 +58,6 @@
 	</div>
 	<div id="pagination">
 		<ul class="container">
-			<li><a href="MESSINA_TEST"></a></li>
-			<li><a href="MESSINA_TEST"></a></li>
-			<li><a href="MESSINA_TEST"></a></li>
 		</ul>
 	</div>
 		
@@ -119,21 +116,36 @@
 
 	<script>
 
-		$(document).ready(function(){
-
+		
 			// set the ul width based on the number of lis times the container width 
-			slideCount = $("#carousal ul").children().size();
+
+			slideCount = $("#carousal ul").find('li').size();
 			$("#carousal ul").css("width", slideCount*940);
 
+			$(document).ready(function () {
 
-		    // Set the interval to be 5 seconds
-		    var t = setInterval(function(){
-		        $("#carousal ul").animate({marginLeft:-940},1000,function(){
-		            $(this).find("li:last").after($(this).find("li:first"));
-		            $(this).css({marginLeft:0});
-		        })
-		    },10000);
+			for (var i=0; i < slideCount; i++) {
+				$("#pagination ul").append("<li><a href='#'></a></li>");
+			};
+
 		});
+
+
+
+
+
+
+		// $(document).ready(function(){
+
+		//     // Set the interval to be 5 seconds
+		//     var t = setInterval(function(){
+		//         $("#carousal ul").animate({marginLeft:-940},1000,function(){
+
+		//             $(this).find("li:last").after($(this).find("li:first"));
+		//             $(this).css({marginLeft:0});
+		//         })
+		//     },10000);
+		// });
 
 	</script>
 
