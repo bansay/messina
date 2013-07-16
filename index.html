@@ -117,18 +117,27 @@
 	<script>
 
 		
-			// set the ul width based on the number of lis times the container width 
+			// set the ul width based on the number of list itemss multiplied by the slide width 
 
 			slideCount = $("#carousal ul").find('li').size();
 			$("#carousal ul").css("width", slideCount*940);
 
+			// generate pagination lis based on how many slides there are
+
 			$(document).ready(function () {
 
-			for (var i=0; i < slideCount; i++) {
-				$("#pagination ul").append("<li><a href='#'></a></li>");
-			};
+				for (var i=0; i < slideCount; i++) {
+					$("#pagination ul").append("<li><a href='#'></a></li>");
+					$("#pagination li a:first").addClass("active"); 
+				};
 
-		});
+			});
+
+			// add active class to first slider and target first pagination
+
+
+
+
 
 
 
