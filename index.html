@@ -53,6 +53,32 @@
 						<p>Plus, receive a free bottle opener with the purchase of 3 or more glasses!</p>
 					</div>
 				</li>
+				<li class="slide">
+					<img src="img/slides/slide-01.png" alt="Select Perfumes &amp; Colognes" title="Select Perfumes &amp; Colognes" />
+					<div class="slide-desc">
+						<span>30% Off</span>
+						<h2>select perfumes &amp; colognes</h2>
+						<p>Find great deals on designer scents like Belenciaga or d&rsquo;Armani and more!</p>
+					</div>
+				</li>
+				<li class="slide">
+					<img src="img/slides/slide-02.png" alt="Luxurious Bamboo Towels" title="Luxurious Bamboo Towels" />
+					<div class="slide-desc">
+						<span>FREE Towels!</span>
+						<h2>luxurious bamboo towels</h2>
+						<p>Buy any two towels and get another towel of equal or lesser value for free!</p>
+						<p>Or get 10% off when you purchase 2 or more complete towel sets!</p>
+					</div>
+				</li>
+				<li class="slide">
+					<img src="img/slides/slide-03.png" alt="Wine Glasses and Accessories" title="Wine Glasses and Accessories" />
+					<div class="slide-desc">
+						<span>25% off</span>
+						<h2>wine glasses &amp; accessories</h2>
+						<p>Celebrate the holidays in style this year with a new set of modern crystal wine glasses!</p>
+						<p>Plus, receive a free bottle opener with the purchase of 3 or more glasses!</p>
+					</div>
+				</li>
 			</ul>
 		</div>
 	</div>
@@ -116,9 +142,6 @@
 
 	<script>
 
-		
-			// set the ul width based on the number of list itemss multiplied by the slide width 
-
 			slideCount = $("#carousal ul").find('li').size();
 			$("#carousal ul").css("width", slideCount*940);
 
@@ -139,13 +162,28 @@
 
 					event.preventDefault();
 
+					var listPos = $(this).parents('li').index();
+					var marginLeft =  listPos * 940;
 
-					var listPosition = $(this).parents('li').index();
-					console.log(listPosition+1);
+
+					  $("#carousal ul").animate({
+					    "margin-left": -marginLeft
+					  }, 1500 );
+
+
+
+
+
+
+
+
+
+
 
 				})
 
 			});
+
 
 
 
@@ -168,7 +206,7 @@
 		//             $(this).find("li:last").after($(this).find("li:first"));
 		//             $(this).css({marginLeft:0});
 		//         })
-		//     },10000);
+		//     },5000);
 		// });
 
 	</script>
