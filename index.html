@@ -122,18 +122,33 @@
 			slideCount = $("#carousal ul").find('li').size();
 			$("#carousal ul").css("width", slideCount*940);
 
-			// generate pagination lis based on how many slides there are
+			// generate pagination lis based on how many slides there are and add active class to first list item
 
 			$(document).ready(function () {
+
+				// generate pagination lis based on how many slides there are and add active class to first list item
 
 				for (var i=0; i < slideCount; i++) {
 					$("#pagination ul").append("<li><a href='#'></a></li>");
 					$("#pagination li a:first").addClass("active"); 
 				};
 
+				// add click function to pagination anchor
+
+				$("#pagination a").click(function (event) {
+
+					event.preventDefault();
+
+
+					var listPosition = $(this).parents('li').index();
+					console.log(listPosition+1);
+
+				})
+
 			});
 
-			// add active class to first slider and target first pagination
+
+
 
 
 
