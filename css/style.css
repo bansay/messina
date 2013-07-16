@@ -3,6 +3,7 @@
 html, 
 body {
 	height:100%;
+	background: transparent;
 }
 
 /* fonts */
@@ -167,7 +168,9 @@ nav {
 #thumbnail:after,
 #thumbnail ul:after,
 #more-products:after,
-#more-products ul:after {
+#more-products ul:after,
+#carousal ul:after,
+#slides:after {
 	display: table;
 	clear: both;
 	content:"";
@@ -258,6 +261,63 @@ input[type=submit] {
     padding-right: 40px;
     margin: 0 auto 40px;
 }
+/* carousal */
+
+#carousal {
+	background: -moz-linear-gradient(top,  rgba(255,255,255,0) 0%, rgba(243,243,243,.8) 100%); /* FF3.6+ */
+	background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,rgba(255,255,255,1)), color-stop(100%,rgba(243,243,243,.8))); /* Chrome,Safari4+ */
+	background: -webkit-linear-gradient(top,  rgba(255,255,255,0) 0%,rgba(243,243,243,.8) 100%); /* Chrome10+,Safari5.1+ */
+	background: -o-linear-gradient(top,  rgba(255,255,255,0) 0%,rgba(243,243,243,.8) 100%); /* Opera 11.10+ */
+	background: -ms-linear-gradient(top,  rgba(255,255,255,0) 0%,rgba(243,243,243,.8) 100%); /* IE10+ */
+	background: linear-gradient(to bottom,  rgba(255,255,255,0) 0%,rgba(243,243,243,.8) 100%); /* W3C */
+	border-bottom: solid 1px #cfcfcf;
+	height: 315px;
+	width: 100%;
+}
+#carousal .container {
+	overflow: hidden;	
+}
+
+#carousal ul {
+	width: 2820px;
+}
+
+#slides {
+	float:left;
+	width: 940px;
+}
+
+#slides img {
+	float:left;
+	z-index: -1;
+	position: relative;
+}
+
+#slides p {
+	margin-top: 25px;
+	color:#989898;
+	font-size: 87.5%;
+}
+
+#slides p:first-of-type {
+	font-size: 112.5%;
+}
+
+#slides span {
+	font-size: 225%;
+	font-family: 'Helvetica', sans-serif;
+	color:#cb2457;
+	margin-top: 35px;
+	display: block;
+}
+
+#slides h2 {
+	text-transform: uppercase;
+	font-size: 137.5%;
+	color:#989898;
+	margin-top: 20px;
+}
+
 
 /* product list */
 #product-list {
@@ -318,7 +378,8 @@ input[type=submit] {
 
 .item-name {
 	top: 12px;
-	font-size: 100%
+	font-size: 100%;
+	text-transform: capitalize;
 }
 
 .item-cost {
@@ -441,6 +502,7 @@ input[type=submit] {
 	height:204px;
 	overflow:hidden;
 }
+
 #zoom img {
 	position:relative;
 	top:0;
@@ -535,7 +597,7 @@ figure {
 	padding: 0 20px 20px 0;
 }
 
-#more-products ul li:last-of-type {
+#more-products ul li:nth-of-type(4n) {
 	padding: 0 0 20px 0;
 }
 

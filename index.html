@@ -1,11 +1,134 @@
-<!doctype html>
-
+<!DOCTYPE HTML>
 <html>
 <head>
-<title>Messina</title>
+	<title>About Messina</title>
+
+	<!-- main stylesheet -->
+	<link rel="stylesheet" href="css/style.css" />
+
 </head>
 
 <body>
+
+	<header id="main-header" class="container">
+		<a id="logo-primary" href="/">
+			<h1 class="hidden">Messina</h1>
+			<p class="hidden">Statements of Fashion</p>
+		</a>
+	</header>
+	<nav>
+		<ul id="nav-primary" class="container">
+			<li><a href="MESSINA_TEST">Women&rsquo;s</a></li>
+			<li><a href="MESSINA_TEST">Bath</a></li>
+			<li><a href="MESSINA_TEST">Men&rsquo;s</a></li>
+			<li><a href="MESSINA_TEST">Kitchen</a></li>
+		</ul>
+	</nav>
+	<div id="carousal">
+		<div class="container">
+			<ul>
+				<li id="slides">
+					<img src="img/slides/slide-01.png" alt="Select Perfumes &amp; Colognes" title="Select Perfumes &amp; Colognes" />
+					<div class="slide-desc">
+						<span>30% Off</span>
+						<h2>select perfumes &amp; colognes</h2>
+						<p>Find great deals on designer scents like Belenciaga or d&rsquo;Armani and more!</p>
+					</div>
+				</li>
+				<li id="slides">
+					<img src="img/slides/slide-02.png" alt="Luxurious Bamboo Towels" title="Luxurious Bamboo Towels" />
+					<div class="slide-desc">
+						<span>FREE Towels!</span>
+						<h2>luxurious bamboo towels</h2>
+						<p>Buy any two towels and get another towel of equal or lesser value for free!</p>
+						<p>Or get 10% off when you purchase 2 or more complete towel sets!</p>
+					</div>
+				</li>
+				<li id="slides">
+					<img src="img/slides/slide-03.png" alt="Wine Glasses and Accessories" title="Wine Glasses and Accessories" />
+					<div class="slide-desc">
+						<span>25% off</span>
+						<h2>wine glasses &amp; accessories</h2>
+						<p>Celebrate the holidays in style this year with a new set of modern crystal wine glasses!</p>
+						<p>Plus, receive a free bottle opener with the purchase of 3 or more glasses!</p>
+					</div>
+				</li>
+			</ul>
+		</div>
+	</div>
+		<!-- <ul id="pagination">
+			<li><a href="MESSINA_TEST">Featured Sale 1</a></li>
+			<li><a href="MESSINA_TEST">Featured Sale 2</a></li>
+			<li><a href="MESSINA_TEST">Featured Sale 3</a></li>
+		</ul> -->
+		
+	<div id="page" class="container">
+		<div id="sidebar">
+			<form id="search">
+				<input type="text" name="search" />
+				<input type="submit" value="Search"/>
+			</form>
+		</div><!-- #sidebar-->
+		<div id="content">
+			<ol id="product-list">
+				<li class="product-item">
+					<a href="MESSINA_TEST">
+						<h2 class="item-name">bags</h2>
+						<img src="img/list/home-bags.png" alt="Bags" />	
+					</a>
+				</li>
+				<li class="product-item">
+					<a href="MESSINA_TEST">
+						<h2 class="item-name">all things coffee</h2>
+						<img src="img/list/home-coffee.png" alt="All Things Coffee"/>
+					</a>
+				</li>
+				<li class="product-item">
+					<a href="MESSINA_TEST">
+						<h2 class="item-name">smell goods</h2>
+						<img src="img/list/home-misc.png" alt="Smell Goods"/>				
+					</a>
+				</li>
+			</ol>
+		</div><!-- #content-->	
+	</div><!-- .container-->
+
+	<footer id="main-footer">
+		<div class="container">
+			<ul role="navigation">
+				<li><a href="MESSINA_TEST">Follow us on Twitter</a></li>
+				<li><a href="MESSINA_TEST">Like us on Facebook</a></li>
+			</ul>
+			<ul role="navigation">
+				<li><a href="MESSINA_TEST">Philosophy</a></li>
+				<li><a href="MESSINA_TEST">Privacy Policy</a></li>
+				<li><a href="MESSINA_TEST">Shipping &amp; Returns</a></li>
+				<li><a href="MESSINA_TEST">F.A.Q.s</a></li>
+			</ul>
+			<ul role="navigation">
+				<li><a href="MESSINA_TEST">Contact Us</a></li>
+				<li><a href="tel:180055512345">800.555.12345</a></li>
+			</ul>
+			<a id="logo-secondary" href="#"><span class="hidden">Messina : Statements of Fashion</span></a>
+		</div><!-- .container-->
+	</footer>
+
+	<script src="http://ajax.googleapis.com/ajax/libs/jquery/1.10.1/jquery.min.js"></script>
+
+	<script>
+
+		$(document).ready(function(){
+		    // Set the interval to be 5 seconds
+		    var t = setInterval(function(){
+		        $("#carousal ul").animate({marginLeft:-940},1000,function(){
+		            $(this).find("li:last").after($(this).find("li:first"));
+		            $(this).css({marginLeft:0});
+		        })
+		    },10000);
+		});
+
+	</script>
+
 </body>
 
-</html>
+</html> 
