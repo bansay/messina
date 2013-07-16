@@ -169,7 +169,7 @@ nav {
 #thumbnail ul:after,
 #more-products:after,
 #more-products ul:after,
-#carousal:after,
+#carousal ul:after,
 #slides:after {
 	display: table;
 	clear: both;
