@@ -293,6 +293,32 @@ input[type=submit] {
 	position: relative;
 }
 
+#slides p {
+	margin-top: 25px;
+	color:#989898;
+	font-size: 87.5%;
+}
+
+#slides p:first-of-type {
+	font-size: 112.5%;
+}
+
+#slides span {
+	font-size: 225%;
+	font-family: 'Helvetica', sans-serif;
+	color:#cb2457;
+	margin-top: 35px;
+	display: block;
+}
+
+#slides h2 {
+	text-transform: uppercase;
+	font-size: 137.5%;
+	color:#989898;
+	margin-top: 20px;
+}
+
+
 /* product list */
 #product-list {
 	margin-bottom: 150px;
