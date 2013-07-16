@@ -313,7 +313,21 @@ input[type=submit] {
 	color:#989898;
 	margin-top: 20px;
 }
+/* pagination */
+#pagination {
+	position: relative;
+	margin-top: -50px;
+}
+#pagination ul {
+	width: 100%;
+	text-align: center;
+}
 
+#pagination li {
+	display: inline-block;
+	position: relative;
+	margin: 0 auto;
+}
 
 /* product list */
 #product-list {

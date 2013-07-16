@@ -56,11 +56,13 @@
 			</ul>
 		</div>
 	</div>
-		<!-- <ul id="pagination">
+	<div id="pagination">
+		<ul>
 			<li><a href="MESSINA_TEST">Featured Sale 1</a></li>
 			<li><a href="MESSINA_TEST">Featured Sale 2</a></li>
 			<li><a href="MESSINA_TEST">Featured Sale 3</a></li>
-		</ul> -->
+		</ul>
+	</div>
 		
 	<div id="page" class="container">
 		<div id="sidebar">
@@ -120,7 +122,6 @@
 		$(document).ready(function(){
 
 			// set the ul width based on the number of lis times the container width 
-
 			slideCount = $("#carousal ul").children().size();
 			$("#carousal ul").css("width", slideCount*940);
 
