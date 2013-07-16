@@ -278,10 +278,6 @@ input[type=submit] {
 	overflow: hidden;	
 }
 
-#carousal ul {
-	width: 2820px;
-}
-
 #slides {
 	float:left;
 	width: 940px;

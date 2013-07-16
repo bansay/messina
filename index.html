@@ -118,6 +118,13 @@
 	<script>
 
 		$(document).ready(function(){
+
+			// set the ul width based on the number of lis times the container width 
+
+			slideCount = $("#carousal ul").children().size();
+			$("#carousal ul").css("width", slideCount*940);
+
+
 		    // Set the interval to be 5 seconds
 		    var t = setInterval(function(){
 		        $("#carousal ul").animate({marginLeft:-940},1000,function(){
