@@ -611,11 +611,17 @@ figure {
 	padding: 0;
 }
 
+#more-products {
+	margin-top:25px;
+}
+
 #more-products h2 {
 	color:#2f2e46;
 	font-size: 125%;
 }
-
+#more-products #product-list {
+	margin-top: 15px;
+}
 /* footer */
 #main-footer {
 	clear: both;
