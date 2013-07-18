@@ -65,11 +65,21 @@
 					<img src="img/figure/table-big-sir-01.png" alt="Big Sir Dining Table" title="Big Sir Dining Table" />
 				</figure>
 				<ul id="thumbnail">
-					<li><img src="img/thumb/table-big-sir-01.png" alt="Big Sir Dining Table" title="Big Sir Dining Table" data-large="img/figure/table-big-sir-01.png" /></li>
-					<li><img src="img/thumb/table-big-sir-02.png" alt="Big Sir Dining Table" title="Big Sir Dining Table" data-large="img/figure/table-big-sir-02.png" /></li>
-					<li><img src="img/thumb/table-big-sir-03.png" alt="Big Sir Dining Table" title="Big Sir Dining Table" data-large="img/figure/table-big-sir-03.png" /></li>
-					<li><img src="img/thumb/table-big-sir-04.png" alt="Big Sir Dining Table" title="Big Sir Dining Table" data-large="img/figure/table-big-sir-04.png" /></li>
-					<li><img src="img/thumb/table-big-sir-05.png" alt="Big Sir Dining Table" title="Big Sir Dining Table" data-large="img/figure/table-big-sir-05.png" /></li>
+					<li>
+						<a href="img/figure/table-big-sir-01.png"><img src="img/thumb/table-big-sir-01.png" alt="Big Sir Dining Table" title="Big Sir Dining Table" /></a>
+					</li>
+					<li>
+						<a href="img/figure/table-big-sir-02.png"><img src="img/thumb/table-big-sir-02.png" alt="Big Sir Dining Table" title="Big Sir Dining Table" /></a>
+					</li>
+					<li>
+						<a href="img/figure/table-big-sir-03.png"><img src="img/thumb/table-big-sir-03.png" alt="Big Sir Dining Table" title="Big Sir Dining Table" /></a>
+					</li>
+					<li>
+						<a href="img/figure/table-big-sir-04.png"><img src="img/thumb/table-big-sir-04.png" alt="Big Sir Dining Table" title="Big Sir Dining Table" /></a>
+					</li>
+					<li>
+						<a href="img/figure/table-big-sir-05.png"><img src="img/thumb/table-big-sir-05.png" alt="Big Sir Dining Table" title="Big Sir Dining Table" /></a>
+					</li>
 				</ul>
 			</div>		
 		</div><!-- #content-->
@@ -114,14 +124,15 @@
 
 		$('#thumbnail img').hover(
 			function () {
-				var imageSource = $(this).data('large');
+				var imageSource = $(this).parents('a').attr('href');
 				$featureImage.attr('src', imageSource);
 			}
 		);
 
 		$("#thumbnail img").click(
-		  function () {
-		   var imageSource = $(this).data('large');
+		  function (event) {
+		  event.preventDefault();
+		   var imageSource = $(this).parents('a').attr('href');
 		   $featureImage.attr('src', imageSource);
 		  }
 		);
