@@ -626,6 +626,18 @@ figure {
 	color:#2f2e46;
 	font-size: 150%;
 }
+#review-cart {
+	margin-top: 45px;
+}
+
+#review-cart th {
+	font-size: 75%;
+	font-family: 'Helvetica', sans-serif;
+	padding-left: 10px;
+	background:#ebebeb;
+	text-align: left;
+	line-height: 20px;
+}
 
 /* footer */
 #main-footer {
