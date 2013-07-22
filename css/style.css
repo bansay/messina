@@ -201,12 +201,12 @@ nav {
 
 /* search bar and add to cart */
 
-#cart input[type=submit] {
+#add-cart input[type=submit] {
 	width: 120px;
 	cursor: pointer;
 }
 
-#cart p {
+#add-cart p {
 	font-family: 'junctionRegular';
 	font-size: 112.5%;
 	text-align: center;
@@ -482,11 +482,11 @@ input[type=submit] {
 	font-size: 87.5%;
 }
 
-#quickview #cart {
+#quickview #add-cart {
 	float: right;
 }
 
-#quickview #cart p {
+#quickview #add-cart p {
 	margin: 0 auto 10px;
 	position:relative;
 	color:black;
@@ -623,6 +623,14 @@ figure {
 #more-products #product-list {
 	margin-top: 15px;
 }
+
+/*cart.html*/
+
+#review-cart h1 {
+	color:#2f2e46;
+	font-size: 150%;
+}
+
 /* footer */
 #main-footer {
 	clear: both;
