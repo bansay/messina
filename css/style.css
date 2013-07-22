@@ -159,6 +159,7 @@ nav {
 #page {
 	margin-top: 40px;
 	height: auto;
+	min-height: 100%;
 }
 
 #page:after,
