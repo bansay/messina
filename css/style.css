@@ -39,7 +39,7 @@ h6 {
 
 /* main header */
 
-.title {
+.section-title {
 	font-family: 'junctionRegular';
 	font-size: 112.5%;
 	color: #2f2e46;
@@ -616,17 +616,13 @@ figure {
 	margin-top:25px;
 }
 
-#more-products h2 {
-	color:#2f2e46;
-	font-size: 125%;
-}
 #more-products #product-list {
 	margin-top: 15px;
 }
 
 /*cart.html*/
 
-#review-cart h1 {
+.page-title {
 	color:#2f2e46;
 	font-size: 150%;
 }
