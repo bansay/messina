@@ -629,11 +629,14 @@ figure {
 #cart-review {
 	margin-top: 45px;
 }
+#cart-review th,
+#cart-review td {
+	padding-left: 10px;
+}
 
 #cart-review th {
 	font-size: 75%;
 	font-family: 'Helvetica', sans-serif;
-	padding-left: 10px;
 	background:#ebebeb;
 	text-align: left;
 	line-height: 20px;
