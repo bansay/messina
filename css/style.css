@@ -628,6 +628,7 @@ figure {
 }
 #cart-review {
 	margin-top: 45px;
+	font-family: 'Helvetica', sans-serif;
 }
 #cart-review th,
 #cart-review td {
@@ -636,7 +637,6 @@ figure {
 
 #cart-review th {
 	font-size: 75%;
-	font-family: 'Helvetica', sans-serif;
 	background:#ebebeb;
 	text-align: left;
 	line-height: 20px;
@@ -644,12 +644,17 @@ figure {
 .cart-item h2 {
 	font-size: 87.5%;
 	font-weight: bold;
-	font-family: 'Helvetica', sans-serif;
 }
 .cart-item span {
 	font-size: 68.75%;
 	text-transform: uppercase;
-	font-family: 'Helvetica', sans-serif;
+}
+.cart-item-status p {
+	font-size: 68.75%;
+}
+
+.cart-item-price p {
+	font-size: 87.5%;
 }
 
 /* footer */
