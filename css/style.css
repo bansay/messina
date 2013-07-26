@@ -644,6 +644,14 @@ figure {
 	vertical-align: top;
 }
 
+#cart-review td {
+	padding-top: 15px;
+}
+
+#cart-review tr:first-of-type td {
+	padding-top: 10px;
+}
+
 #table-head {
 	font-size: 75%;
 	background:#ebebeb;
@@ -660,7 +668,7 @@ figure {
 }
 .cart-item .cart-item-name {
 	float:left;
-	padding-top: 10px;
+	padding-left: 14px;
 }
 
 .cart-item h2 {
@@ -668,19 +676,16 @@ figure {
 	font-size: 87.5%;
 	font-weight: bold;
 	display: block;
-	padding-left: 14px;
 }
 
 .cart-item span {
 	font-size: 68.75%;
 	text-transform: uppercase;
-	padding-left: 14px;
 }
 
 .cart-item-status {
 	width: 290px;
 	font-size: 68.75%;
-	padding-top: 15px;
 	padding-bottom: 12px;
 }
 .cart-item-status p:first-of-type {
@@ -690,7 +695,6 @@ figure {
 .cart-item-price {
 	width: 100px;
 	font-size: 87.5%;
-	padding-top: 10px;
 }
 
 .cart-item-quantity {
@@ -703,6 +707,8 @@ figure {
 
 .cart-item-total {
 	width: 85px;
+	font-weight: bold;
+	font-size: 87.5%;
 }
 
 .cart-item-options {
