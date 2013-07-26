@@ -28,17 +28,55 @@
 	<div id="page" class="container">
 			<h1 class="page-title">My Shopping Cart</h1>
 			<table id="cart-review" cellpadding="0" cellspacing="0" width="100%">
-				<tr>
-					<th colspan="2">Items</th>
+				<colgroup>
+					<col class="cart-item" span="1">
+					<col class="cart-item-status" span="1">
+					<col class="cart-item-price" span="1">
+					<col class="cart-item-quantity" span="1">
+					<col class="cart-item-total" span="1">
+					<col class="cart-item-options" span="1">
+				</colgroup>
+				<thead id="table-head">
+					<th>Items</th>
 					<th>Shipping &amp; Availability</th>
 					<th>Item Price</th>
 					<th>Qty</th>
 					<th>Total</th>
 					<th><span class="hidden">Options</span></th>
+				</thead>
+				<tr>
+					<td class="cart-item">
+						<img src="img/thumb/table-big-sir-01.png" />
+						<h2>Bir Sur Table</h2>
+						<span>SKU 1234-5678</span>
+					</td>
+					<td class="cart-item-status">
+						<p>In stock, ready to ship.</p>
+						<p>Shipping: Standard</p>
+						<p>Arrives: 3-5 business days</p>
+						<p class="special-offer">Eligible for Free Shipping on Select Orders over $99</p>
+					</td>
+					<td class="cart-item-price">
+						<p class="sale-price">$1499</p>
+						<p>reg.<br />$1699</p>
+					</td>
+					<td class="cart-item-quantity">
+						<input type="text" name="quantity">
+					</td>
+					<td class="cart-item-total">
+						<p>$1499</p>
+					</td>
+					<td class="cart-item-options">
+						<ul>
+						<li><a href="MESSINA_TEST">Update</a></li>
+						<li><a href="MESSINA_TEST">Remove</a></li>
+						<li><a href="MESSINA_TEST">Save for Later</a></li>
+						</ul>
+					</td>
 				</tr>
 				<tr>
-					<td><img src="img/thumb/table-big-sir-01.png" /></td>
 					<td class="cart-item">
+						<img src="img/thumb/table-big-sir-01.png" />
 						<h2>Bir Sur Table</h2>
 						<span>SKU 1234-5678</span>
 					</td>
