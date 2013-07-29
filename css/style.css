@@ -815,6 +815,15 @@ figure {
 	padding-top: 15px;
 }
 
+#checkout input[type=submit] {
+	border: none;
+	background: #2f2e46;
+	color:white;
+	font-size: 100%;
+	text-transform: uppercase;
+	margin-top: 10px;
+}
+
 
 /* footer */
 #main-footer {
