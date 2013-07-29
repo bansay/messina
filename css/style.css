@@ -632,6 +632,7 @@ figure {
 	margin-top: 45px;
 	border-collapse: collapse;
 	font-family: 'Helvetica', sans-serif;
+	width: 100%;
 }
 #cart-review tr {
 	border-left: solid 1px #ebebeb;
