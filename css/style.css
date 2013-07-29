@@ -632,6 +632,7 @@ figure {
 /*cart.html*/
 #cart {
 	font-family: 'Helvetica', sans-serif;
+	color:#555555;
 }
 
 #cart-review {
@@ -753,14 +754,16 @@ figure {
 }
 
 #cart-total {
-	width: 350px;
+	width: 330px;
 	float:right;
 	background:#ebebeb;
+	padding:10px;
+	line-height: 24px;
 }
 
 #cart-total dt, #cart-total dd {
     float: left;
-    width: 175px;
+    width: 50%;
 }
 
 #cart-total dd + dt, #cart-total dd + dd {
@@ -769,6 +772,9 @@ figure {
 
 #cart-total dd + dd {
     float: none
+}
+#cart-total dt {
+	font-weight: bold;
 }
 
 #cart-total dd {
