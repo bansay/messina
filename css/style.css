@@ -809,10 +809,8 @@ figure {
 
 #cart-total .special-offer {
 	border-bottom: solid 1px #ffffff;
-	padding-bottom: 15px; 
-}
-#cart-total .total-before-tax {
-	padding-top: 15px;
+	padding-bottom: 15px;
+	margin-bottom: 15px; 
 }
 
 #checkout input[type=submit] {
