@@ -733,6 +733,16 @@ figure {
 	color:#ff0000;
 }
 
+#cart-shipping {
+	width:590px;
+	float:left;
+}
+
+#cart-total {
+	width: 350px;
+	float:right;
+}
+
 /* footer */
 #main-footer {
 	clear: both;
