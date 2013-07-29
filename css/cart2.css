@@ -1,0 +1,78 @@
+#cart-page {
+	font-family: 'Helvetica', sans-serif;
+	color:#555555;
+}
+
+#cart-review {
+	display: table;
+	margin-top: 45px;
+	border-collapse: collapse;
+}
+
+.row {
+	display: table-row;
+}
+
+.cell {
+	display: table-cell;
+	padding-left: 10px;
+}
+
+/* cell widths, applying border box to maintain width regardless of padding inside cells */
+.cart-item,
+.cart-item:before,
+.cart-item:after,
+.cart-item-status,
+.cart-item-status:before,
+.cart-item-status:after,
+.cart-item-price,
+.cart-item-price:before,
+.cart-item-price:after,
+.cart-item-quantity,
+.cart-item-quantity:before,
+.cart-item-quantity:after,
+.cart-item-total,
+.cart-item-total:before,
+.cart-item-total:after,
+.cart-item-options,
+.cart-item-options:before,
+.cart-item-options:after {
+	-moz-box-sizing: border-box; 
+	-webkit-box-sizing: border-box; 
+	box-sizing: border-box;
+}
+
+.cart-item {
+	width: 300px;
+}
+
+.cart-item-status {
+	width: 285px;
+}
+
+.cart-item-price {
+	width: 95px;
+}
+
+.cart-item-quantity {
+	width: 40px;
+}
+
+.cart-item-total {
+	width: 85px;
+}
+
+.cart-item-options {
+	width: 135px;
+}
+
+
+
+
+
+#cart-head {
+	font-size: 75%;
+	background:#ebebeb;
+	text-align: left;
+	line-height: 20px;
+}
