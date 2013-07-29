@@ -78,7 +78,10 @@ ol, ul {
 }
 
 p,
-figure {
+figure,
+dl,
+dt,
+dd {
 	margin: 0;
 	padding: 0;
 }
@@ -627,11 +630,13 @@ figure {
 }
 
 /*cart.html*/
+#cart {
+	font-family: 'Helvetica', sans-serif;
+}
 
 #cart-review {
 	margin-top: 45px;
 	border-collapse: collapse;
-	font-family: 'Helvetica', sans-serif;
 	width: 100%;
 }
 #cart-review tr {
@@ -736,11 +741,38 @@ figure {
 #cart-shipping {
 	width:590px;
 	float:left;
+	color:#555555;
+	font-size: 87.5%;
+}
+
+#cart-shipping h2 {
+	font-family: 'Helvetica', sans-serif;
+	font-size: 87.5%;
+	font-weight: bold;
+	color:#555555;
 }
 
 #cart-total {
 	width: 350px;
 	float:right;
+	background:#ebebeb;
+}
+
+#cart-total dt, #cart-total dd {
+    float: left;
+    width: 175px;
+}
+
+#cart-total dd + dt, #cart-total dd + dd {
+    clear: left
+}
+
+#cart-total dd + dd {
+    float: none
+}
+
+#cart-total dd {
+	text-align: right;
 }
 
 /* footer */
