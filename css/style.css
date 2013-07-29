@@ -178,7 +178,8 @@ nav {
 #thumbnail ul:after,
 #carousal ul:after,
 .slide:after,
-.cart-item:after {
+.cart-item:after,
+#cart-details:after {
 	display: table;
 	clear: both;
 	content:"";
@@ -760,16 +761,16 @@ figure {
 }
 
 #cart-shipping {
-	width:590px;
-	float:left;
-	color:#555555;
+	width: 590px;
+	float: left;
+	color: #555555;
 }
 
 #cart-shipping h2 {
 	font-family: 'Helvetica', sans-serif;
 	font-size: 87.5%;
 	font-weight: bold;
-	color:#555555;
+	color: #555555;
 	padding-top: 10px;
 }
 #cart-shipping p {
@@ -781,8 +782,8 @@ figure {
 #cart-total {
 	width: 330px;
 	float:right;
-	background:#ebebeb;
-	padding:10px;
+	background: #ebebeb;
+	padding: 10px;
 	line-height: 24px;
 }
 
