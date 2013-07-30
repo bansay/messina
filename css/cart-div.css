@@ -47,7 +47,8 @@
 	padding-top: 10px; 
 }
 #cart-body .cart-item img { 
-	float: left; display: block; 
+	float: left; 
+	display: block; 
 }
 
 #cart-body .cart-item h2 { 
@@ -97,7 +98,7 @@
 	line-height: 18px; 
 	padding-right:10px; 
 }
-.cart-item-options ul { 
+#cart-body .cart-item-options ul { 
 	padding-left: 30px; 
 }
 
