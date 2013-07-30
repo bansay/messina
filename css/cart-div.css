@@ -174,8 +174,10 @@
 #cart-total dd + dd {
     float: none
 }
-#cart-total dt {
-	font-weight: bold;
+#cart-total h2 {
+	font-weight:bold;
+	font-size: 100%;
+	font-family: 'Helvetica', sans-serif;
 }
 
 #cart-total dd {
