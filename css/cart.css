@@ -28,6 +28,10 @@
 	border-right: solid 1px #ebebeb; 
 }
 
+#cart-body .cell {
+	padding-top: 15px;
+}
+
 /* set widths of cells */
 
 .cart-item { width: 290px; }
@@ -51,12 +55,6 @@
 
 /* #cart-body */
 
-#cart-body .cell { 
-	padding-top: 15px; 
-}
-#cart-body:first-of-type .cell { 
-	padding-top: 10px; 
-}
 #cart-body .cart-item img { 
 	float: left; 
 	display: block; 
