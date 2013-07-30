@@ -32,9 +32,9 @@
 			<div id="cart-head" class="row">
 				<div class="cart-item cell">Items</div>
 				<div class="cart-item-status cell">Shipping &amp; Availability</div>
-				<div class="cart-item-price cell">Item Price</div>
+				<div class="cart-item-price cell center">Item Price</div>
 				<div class="cart-item-quantity cell">Qty</div>
-				<div class="cart-item-total cell">Total</div>
+				<div class="cart-item-total cell right">Total</div>
 				<div class="cart-item-options cell"><span>Options</span></div>
 			</div>
 			<div id="cart-body" class="row">
@@ -58,7 +58,7 @@
 				<div class="cart-item-quantity cell">
 					<input type="text" name="quantity">
 				</div>
-				<div class="cart-item-total cell">
+				<div class="cart-item-total cell right">
 					<p>$1499</p>
 				</div>
 				<div class="cart-item-options cell">
@@ -90,7 +90,39 @@
 				<div class="cart-item-quantity cell">
 					<input type="text" name="quantity">
 				</div>
-				<div class="cart-item-total cell">
+				<div class="cart-item-total cell right">
+					<p>$1499</p>
+				</div>
+				<div class="cart-item-options cell">
+					<ul>
+						<li><a href="MESSINA_TEST">Update</a></li>
+						<li><a href="MESSINA_TEST">Remove</a></li>
+						<li><a href="MESSINA_TEST">Save for Later</a></li>
+					</ul>
+				</div>
+			</div>
+			<div id="cart-body" class="row">
+				<div class="cart-item cell">
+					<img src="img/thumb/table-big-sir-01.png" />
+					<div class="cart-item-name">
+						<h2>Bir Sur Table</h2>
+						<span>SKU 1234-5678</span>
+					</div>
+				</div>
+				<div class="cart-item-status cell">
+					<p>In stock, ready to ship.</p>
+					<p>Shipping: Standard</p>
+					<p>Arrives: 3-5 business days</p>
+					<p class="special-offer">Eligible for Free Shipping on Select Orders over $99</p>
+				</div>
+				<div class="cart-item-price cell right">
+					<p class="sale-price">$1499</p>
+					<p>reg.<br />$1699</p>
+				</div>
+				<div class="cart-item-quantity cell">
+					<input type="text" name="quantity">
+				</div>
+				<div class="cart-item-total cell right">
 					<p>$1499</p>
 				</div>
 				<div class="cart-item-options cell">
@@ -102,6 +134,28 @@
 				</div>
 			</div>
 		</div>
+		<div id="cart-details">
+			<div id="cart-shipping">
+				<h2>Shipping Outside the Continental U.S.</h2>
+				<p>Messina offers convenient shipping to most destinations worldwide. If you live outside the Continental United States and would like to place an order, we would be happy to assist you. To get started, click one of the buttons below, or contact us by telephone at +1-800-123-5678</p>
+			</div>
+			<dl id="cart-total">
+				<dt>Merchandise</dt>
+				<dd>$1499.00</dd>
+
+				<dt>Estimated Shipping</dt>
+				<dd>$49.00</dd>
+
+				<dt class="special-offer">Shipping Discount</dt>
+				<dd class="special-offer">-$49.00</dd>
+
+				<dt class="total-before-tax">Estimated Order Total: (before tax)</dt>
+				<dd class="total-before-tax">$1499.00</dd>
+			</dl>
+		</div>
+		<form id="checkout">
+			<input type="submit" value="Checkout" /> 
+		</form>
 	</div><!-- #page-->
 
 	<footer id="main-footer">

@@ -1,100 +1,109 @@
 
-#cart-page {
-	font-family: 'Helvetica', sans-serif;
-	color:#555555;
-}
+#cart-page { font-family: 'Helvetica', sans-serif; color:#555555;}
+#cart-review { display: table; margin-top: 45px; border-collapse: collapse; }
+.row { display: table-row; }
+.cell { display: table-cell; vertical-align: top; padding-left: 10px; }
 
-#cart-review {
-	display: table;
-	margin-top: 45px;
-	border-collapse: collapse;
-}
+/* set widths of cells */
 
-.row {
-	display: table-row;
-}
+.cart-item { width: 290px; }
+.cart-item-status { width: 275px; }
+.cart-item-price { width: 85px; }
+.cart-item-quantity { width: 30px; }
+.cart-item-total { width: 75px; }
+.cart-item-options { width: 125px; }
 
-.cell {
-	display: table-cell;
-	vertical-align: top;
-	padding-left: 10px;
-}
+/* #cart-head */
 
-.cart-item {
-	width: 290px;
-}
+#cart-head { font-size: 75%; background:#ebebeb; text-align: left; line-height: 20px; }
+#cart-head .cart-item-options { color: #ebebeb; }
 
-.cart-item-status {
-	width: 275px;
-}
+/* #cart-body */
 
-.cart-item-price {
-	width: 85px;
-}
+#cart-body .cell { padding-top: 15px; }
+#cart-body:first-of-type .cell { padding-top: 10px; }
+#cart-body .cart-item img { float: left; display: block; }
+#cart-body .cart-item h2 { font-family: 'Helvetica', sans-serif; font-size: 87.5%; font-weight: bold; display: block; }
+#cart-body .cart-item span { font-size: 68.75%; text-transform: uppercase; }
+#cart-body .cart-item-name { float: right; text-align: left; display:block; width: 190px; }
+#cart-body .cart-item-status { font-size: 68.75%; padding-bottom: 12px; }
+#cart-body .cart-item-status p:first-of-type { padding-bottom: 16px; }
+#cart-body .cart-item-quantity input[type=text] { width: 24px; box-shadow:inset 0 0 6px #d8e3e8; border-top: solid 1px #7d7d7d; border-left: solid 1px #cdcdcd; border-right: solid 1px #cdcdcd; border-bottom: solid 1px #cdcdcd; color:#555555; text-align: center; }
+#cart-body .cart-item-price p { font-size: 87.5%; padding-right: 15px; }
+#cart-body .cart-item-total { font-weight: bold; font-size: 87.5%; text-align: right; }
+#cart-body .cart-item-options { font-size: 75%; line-height: 18px; padding-right:10px; }
+.cart-item-options ul { padding-left: 30px; }
 
-.cart-item-quantity {
-	width: 30px;
-}
+/* special-offer and */
 
-.cart-item-total {
-	width: 75px;
-}
+.sale-price { font-weight: bold; color:#ff0000; }
+.special-offer { color:#ff0000; }
 
-.cart-item-options {
-	width: 125px;
-}
+/* alignment */
 
-#cart-head {
-	font-size: 75%;
-	background:#ebebeb;
-	text-align: left;
-	line-height: 20px;
-}
+#cart-review .right { text-align: right; }
+#cart-review .center { text-align: center; }
 
-#cart-head .cart-item-options {
-	color: #ebebeb;
-}
 
-#cart-body .cell {
-	padding-top: 15px;
-}
-
-#cart-body:first-of-type .cell {
-	padding-top: 10px;
-}
-
-/* main cart body */
-
-.cart-item img {
+/* #cart-details */
+#cart-shipping {
+	width: 590px;
 	float: left;
-	display: block;
+	color: #555555;
 }
 
-.cart-item-name {
-	float: right;
-	text-align: left;
-	display:block;
-	width: 190px;
-}
-
-.cart-item h2 {
+#cart-shipping h2 {
 	font-family: 'Helvetica', sans-serif;
 	font-size: 87.5%;
 	font-weight: bold;
-	display: block;
+	color: #555555;
+	padding-top: 10px;
+}
+#cart-shipping p {
+	padding-top: 25px;
+	font-size: 87.5%;
+	padding-right: 10px;
 }
 
-.cart-item-quantity input[type=text] {
-	width: 24px;
-	box-shadow:inset 0 0 6px #d8e3e8;
-	border-top: solid 1px #7d7d7d;
-	border-left: solid 1px #cdcdcd;
-	border-right: solid 1px #cdcdcd;
-	border-bottom: solid 1px #cdcdcd;
-	color:#555555;
-	text-align: center;
+#cart-total {
+	width: 330px;
+	float:right;
+	background: #ebebeb;
+	padding: 10px;
+	line-height: 24px;
 }
 
+#cart-total dt, #cart-total dd {
+    float: left;
+    width: 50%;
+}
 
+#cart-total dd + dt, #cart-total dd + dd {
+    clear: left
+}
 
+#cart-total dd + dd {
+    float: none
+}
+#cart-total dt {
+	font-weight: bold;
+}
 
+#cart-total dd {
+	text-align: right;
+}
+
+#cart-total .special-offer {
+	border-bottom: solid 1px #ffffff;
+	padding-bottom: 15px;
+	margin-bottom: 15px; 
+}
+
+#checkout input[type=submit] {
+	border: none;
+	background: #2f2e46;
+	color:white;
+	font-size: 100%;
+	text-transform: uppercase;
+	margin-top: 10px;
+}
