@@ -1,4 +1,8 @@
 
+#page {
+	margin-bottom: 45px;
+}
+
 #cart-page { 
 	font-family: 'Helvetica', sans-serif; 
 	color:#555555;
@@ -6,8 +10,9 @@
 #cart-review { 
 	display: table; 
 	margin-top: 45px; 
-	border-collapse: collapse; 
-}
+	border-collapse: collapse;
+} 
+
 .row { 
 	display: table-row; 
 }
@@ -15,6 +20,12 @@
 	display: table-cell; 
 	vertical-align: top; 
 	padding-left: 10px; 
+}
+
+#cart-review .row {
+	border-left: solid 1px #ebebeb;
+	border-bottom: solid 1px #ebebeb;
+	border-right: solid 1px #ebebeb; 
 }
 
 /* set widths of cells */
@@ -80,7 +91,7 @@
 	border-top: solid 1px #7d7d7d; 
 	border-left: solid 1px #cdcdcd; 
 	border-right: solid 1px #cdcdcd; 
-	order-bottom: solid 1px #cdcdcd; 
+	border-bottom: solid 1px #cdcdcd; 
 	color:#555555; 
 	text-align: center; 
 }
