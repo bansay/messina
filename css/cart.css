@@ -53,6 +53,10 @@
 	color: #ebebeb; 
 }
 
+#cart-head .cart-item-quantity {
+	text-align: center;
+}
+
 #cart-head .cart-item-total {
 	text-align: right;
 }
