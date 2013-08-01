@@ -188,7 +188,7 @@
 	margin-bottom: 15px; 
 }
 
-#checkout input[type=submit] {
+ input#checkout[type=submit] {
 	border: none;
 	background: #2f2e46;
 	color:white;
