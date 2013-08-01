@@ -53,6 +53,10 @@
 	color: #ebebeb; 
 }
 
+#cart-head .cart-item-total {
+	text-align: right;
+}
+
 /* #cart-body */
 
 #cart-body .cart-item img { 
@@ -95,7 +99,8 @@
 }
 #cart-body .cart-item-price p { 
 	font-size: 87.5%; 
-	padding-right: 15px; 
+	padding-right: 15px;
+	text-align: center; 
 }
 #cart-body .cart-item-total { 
 	font-weight: bold; 
@@ -120,16 +125,6 @@
 .special-offer { 
 	color:#ff0000; 
 }
-
-/* alignment */
-
-#cart-review .right { 
-	text-align: right; 
-}
-#cart-review .center { 
-	text-align: center; 
-}
-
 
 /* #cart-details */
 
