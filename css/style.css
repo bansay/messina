@@ -39,11 +39,16 @@ h6 {
 
 /* main header */
 
-.title {
+.section-title {
 	font-family: 'junctionRegular';
 	font-size: 112.5%;
 	color: #2f2e46;
 	margin-bottom: 10px;
+}
+
+.page-title {
+	color:#2f2e46;
+	font-size: 150%;
 }
 
 /* columned header */
@@ -73,7 +78,10 @@ ol, ul {
 }
 
 p,
-figure {
+figure,
+dl,
+dt,
+dd {
 	margin: 0;
 	padding: 0;
 }
@@ -159,18 +167,19 @@ nav {
 #page {
 	margin-top: 40px;
 	height: auto;
+	min-height: 100%;
 }
 
 #page:after,
 #product-list:after,
 #quickview:after,
-#single-product:after,
+#more-products,
 #thumbnail:after,
 #thumbnail ul:after,
-#more-products:after,
-#more-products ul:after,
 #carousal ul:after,
-#slides:after {
+.slide:after,
+.cart-item:after,
+#cart-details:after {
 	display: table;
 	clear: both;
 	content:"";
@@ -202,12 +211,12 @@ nav {
 
 /* search bar and add to cart */
 
-#cart input[type=submit] {
+#add-cart input[type=submit] {
 	width: 120px;
 	cursor: pointer;
 }
 
-#cart p {
+#add-cart p {
 	font-family: 'junctionRegular';
 	font-size: 112.5%;
 	text-align: center;
@@ -274,36 +283,40 @@ input[type=submit] {
 	height: 315px;
 	width: 100%;
 }
+
 #carousal .container {
-	overflow: hidden;	
+	overflow: hidden;
 }
 
-#carousal ul {
-	width: 2820px;
-}
-
-#slides {
+.slide {
 	float:left;
 	width: 940px;
 }
 
-#slides img {
+.slide img {
 	float:left;
 	z-index: -1;
 	position: relative;
 }
 
-#slides p {
+.slide-desc {
+	padding-left: 10px;
+	float:right;
+	text-align: left;
+	width:380px;
+}
+
+.slide p {
 	margin-top: 25px;
 	color:#989898;
 	font-size: 87.5%;
 }
 
-#slides p:first-of-type {
+.slide p:first-of-type {
 	font-size: 112.5%;
 }
 
-#slides span {
+.slide span {
 	font-size: 225%;
 	font-family: 'Helvetica', sans-serif;
 	color:#cb2457;
@@ -311,13 +324,48 @@ input[type=submit] {
 	display: block;
 }
 
-#slides h2 {
+.slide h2 {
 	text-transform: uppercase;
 	font-size: 137.5%;
 	color:#989898;
 	margin-top: 20px;
 }
+/* pagination */
 
+#pagination {
+	position: relative;
+	margin-top: -25px;
+}
+#pagination ul {
+	text-align: center;
+}
+
+#pagination li {
+	display: inline-block;
+	position: relative;
+	margin: 0 auto;
+	padding:0 8px;
+}
+
+#pagination li a,
+#pagination li a:link,
+#pagination li a:visited {
+	background-image: url('../img/slides/page-btn.png');
+	background-repeat: no-repeat;
+	width: 11px;
+	padding-top:11px;
+	height: 0;
+	background-position: 0 -11px;
+	display: block;
+	z-index: 2;
+	position: relative;
+}
+
+#pagination li a.active,
+#pagination li a:hover {
+	background-position: 0 0;
+	background-repeat: no-repeat;
+}
 
 /* product list */
 #product-list {
@@ -444,11 +492,11 @@ input[type=submit] {
 	font-size: 87.5%;
 }
 
-#quickview #cart {
+#quickview #add-cart {
 	float: right;
 }
 
-#quickview #cart p {
+#quickview #add-cart p {
 	margin: 0 auto 10px;
 	position:relative;
 	color:black;
@@ -511,28 +559,28 @@ input[type=submit] {
 
 /* detail page */
 
-#single-product {
+#product-detail {
 	float:right;
 	width:300px;
 }
 
-#single-product h1 {
+#product-detail h1 {
 	font-size: 150%;
 	color:#2f2e46;
 }
-#single-product p {
+#product-detail p {
 	color:#aaa9ba;
 	font-size: 87.5%;
 	padding:20px 0;
 }
 
-#single-product ul {
+#product-detail ul {
 	float:left;
 	color:#cfcfcf;
 	font-size: 87.5%;
 }
 
-#single-product span {
+#product-detail span {
 	float:right;
 	font-size: 112.5%;
 	color: #2f2e46;
@@ -540,16 +588,14 @@ input[type=submit] {
 	padding-top: 10px;
 }
 
-#single-product form {
+#product-detail form {
 	clear:both;
 	padding-top: 10px;
 }
 
-#single-product select {
+#product-detail select {
 	margin-top: 10px;
 }
-
-#
 
 #feature {
 	float:left;
@@ -572,34 +618,19 @@ figure {
 	padding: 0 20px 0 0;
 }
 
-#thumbnail img:hover {
-	cursor: pointer;
-}
-
 #feature ul li:last-of-type {
 	padding: 0;
 }
 
 #more-products {
-	margin: 40px auto;
+	margin-top:25px;
 }
 
-#more-products p {
-	font-family: 'junctionRegular';
-	font-size: 125%;
-	color: #2f2e46;
-}
-#more-products ul {
-	height: auto;
-}
-#more-products ul li {
-	float:left;
-	padding: 0 20px 20px 0;
+#more-products #product-list {
+	margin-top: 15px;
 }
 
-#more-products ul li:nth-of-type(4n) {
-	padding: 0 0 20px 0;
-}
+
 
 
 /* footer */

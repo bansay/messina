@@ -27,7 +27,7 @@
 	<div id="carousal">
 		<div class="container">
 			<ul>
-				<li id="slides">
+				<li class="slide">
 					<img src="img/slides/slide-01.png" alt="Select Perfumes &amp; Colognes" title="Select Perfumes &amp; Colognes" />
 					<div class="slide-desc">
 						<span>30% Off</span>
@@ -35,7 +35,7 @@
 						<p>Find great deals on designer scents like Belenciaga or d&rsquo;Armani and more!</p>
 					</div>
 				</li>
-				<li id="slides">
+				<li class="slide">
 					<img src="img/slides/slide-02.png" alt="Luxurious Bamboo Towels" title="Luxurious Bamboo Towels" />
 					<div class="slide-desc">
 						<span>FREE Towels!</span>
@@ -44,7 +44,7 @@
 						<p>Or get 10% off when you purchase 2 or more complete towel sets!</p>
 					</div>
 				</li>
-				<li id="slides">
+				<li class="slide">
 					<img src="img/slides/slide-03.png" alt="Wine Glasses and Accessories" title="Wine Glasses and Accessories" />
 					<div class="slide-desc">
 						<span>25% off</span>
@@ -56,11 +56,10 @@
 			</ul>
 		</div>
 	</div>
-		<!-- <ul id="pagination">
-			<li><a href="MESSINA_TEST">Featured Sale 1</a></li>
-			<li><a href="MESSINA_TEST">Featured Sale 2</a></li>
-			<li><a href="MESSINA_TEST">Featured Sale 3</a></li>
-		</ul> -->
+	<div id="pagination">
+		<ul class="container">
+		</ul>
+	</div>
 		
 	<div id="page" class="container">
 		<div id="sidebar">
@@ -117,15 +116,64 @@
 
 	<script>
 
-		$(document).ready(function(){
-		    // Set the interval to be 5 seconds
-		    var t = setInterval(function(){
-		        $("#carousal ul").animate({marginLeft:-940},1000,function(){
-		            $(this).find("li:last").after($(this).find("li:first"));
-		            $(this).css({marginLeft:0});
-		        })
-		    },10000);
-		});
+			slideCount = $("#carousal ul").find('li').size();
+			$("#carousal ul").css("width", slideCount*940);
+
+			// generate pagination lis based on how many slides there are and add active class to first list item
+
+			$(document).ready(function () {
+
+				// generate pagination lis based on how many slides there are and add active class to first list item
+
+				for (var i=0; i < slideCount; i++) {
+					$("#pagination ul").append("<li><a href='#'></a></li>");
+					$("#pagination li a:first").addClass("active"); 
+				};
+
+				// add click function to pagination anchor
+
+				$("#pagination a").click(function (event) {
+
+					event.preventDefault();
+
+					var listPos = $(this).parents('li').index();
+					var marginLeft =  listPos * 940;
+
+
+					  $("#carousal ul").animate({
+					    "margin-left": -marginLeft
+					  }, 1200 );
+					  $("#pagination a").removeClass("active");
+					  $(this).addClass("active");
+
+				})
+
+			});
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+		// $(document).ready(function(){
+
+		//     // Set the interval to be 5 seconds
+		//     var t = setInterval(function(){
+		//         $("#carousal ul").animate({marginLeft:-940},1000,function(){
+
+		//             $(this).find("li:last").after($(this).find("li:first"));
+		//             $(this).css({marginLeft:0});
+		//         })
+		//     },500);
+		// });
 
 	</script>
 
