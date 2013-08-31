@@ -8,7 +8,7 @@
 
 </head>
 
-<body>
+<body id="detail">
 
 	<header id="main-header" class="container">
 		<a id="logo-primary" href="/">
@@ -26,22 +26,9 @@
 	</nav>
 
 	<div id="page" class="container">
-		<div id="sidebar">
-			<form id="search">
-				<input type="text" name="search" />
-				<input type="submit" value="Search"/>
-			</form>
-			<h1 class="title">Kitchen</h1>
-			<ul role="navigation" id="nav-secondary">
-				<li><a href="MESSINA_TEST">dining tables &amp; chairs</a></li>
-				<li><a href="MESSINA_TEST">must have appliances</a></li>
-				<li><a href="MESSINA_TEST">plates, bowls, &amp; glasses</a></li>
-				<li><a href="MESSINA_TEST">tableware &amp; accoutrement</a></li>
-			</ul>
-		</div><!-- #sidebar-->
 		<div id="content">
-			<div id="single-product">
-				<h1>Big Sir Dining Table</h1>
+			<div id="product-detail">
+				<h1 class="page-title">Big Sir Dining Table</h1>
 				<p>Like its namesake, this casual, contemporary dining group is big, bold and natural. The rustic beauty of Big Sur lies in its solid European white oak with naturally occurring splits, cracks and knots.</p>
 				<ul>
 					<li>65&Prime; x 37.5&Prime; x 30&Prime;</li>
@@ -65,26 +52,64 @@
 					<img src="img/figure/table-big-sir-01.png" alt="Big Sir Dining Table" title="Big Sir Dining Table" />
 				</figure>
 				<ul id="thumbnail">
-					<li><img src="img/thumb/table-big-sir-01.png" alt="Big Sir Dining Table" title="Big Sir Dining Table" data-large="img/figure/table-big-sir-01.png" /></li>
-					<li><img src="img/thumb/table-big-sir-02.png" alt="Big Sir Dining Table" title="Big Sir Dining Table" data-large="img/figure/table-big-sir-02.png" /></li>
-					<li><img src="img/thumb/table-big-sir-03.png" alt="Big Sir Dining Table" title="Big Sir Dining Table" data-large="img/figure/table-big-sir-03.png" /></li>
-					<li><img src="img/thumb/table-big-sir-04.png" alt="Big Sir Dining Table" title="Big Sir Dining Table" data-large="img/figure/table-big-sir-04.png" /></li>
-					<li><img src="img/thumb/table-big-sir-05.png" alt="Big Sir Dining Table" title="Big Sir Dining Table" data-large="img/figure/table-big-sir-05.png" /></li>
+					<li>
+						<a href="img/figure/table-big-sir-01.png"><img src="img/thumb/table-big-sir-01.png" alt="Big Sir Dining Table" title="Big Sir Dining Table" /></a>
+					</li>
+					<li>
+						<a href="img/figure/table-big-sir-02.png"><img src="img/thumb/table-big-sir-02.png" alt="Big Sir Dining Table" title="Big Sir Dining Table" /></a>
+					</li>
+					<li>
+						<a href="img/figure/table-big-sir-03.png"><img src="img/thumb/table-big-sir-03.png" alt="Big Sir Dining Table" title="Big Sir Dining Table" /></a>
+					</li>
+					<li>
+						<a href="img/figure/table-big-sir-04.png"><img src="img/thumb/table-big-sir-04.png" alt="Big Sir Dining Table" title="Big Sir Dining Table" /></a>
+					</li>
+					<li>
+						<a href="img/figure/table-big-sir-05.png"><img src="img/thumb/table-big-sir-05.png" alt="Big Sir Dining Table" title="Big Sir Dining Table" /></a>
+					</li>
 				</ul>
-			</div>		
+			</div>
+			<aside id="more-products">
+			<h2>You May Also Like...</h2>
+			<ol id="product-list">
+				<li class="product-item">
+					<a href="MESSINA_TEST">
+						<h3 class="item-name">Arlington Table</h3>
+						<p class="item-cost">$1499</p>
+						<img src="img/list/table-arlington.png" alt="Arlington Table"/>		
+					</a>
+				</li>
+				<li class="product-item">
+					<a href="MESSINA_TEST">
+						<h3 class="item-name">Pacifica Table</h3>
+						<p class="item-cost">$1499</p>
+						<img src="img/list/table-pacifica.png" alt="Pacifica Table"/>	
+					</a>
+				</li>
+				<li class="product-item">
+					<a href="MESSINA_TEST">
+						<h3 class="item-name">Sideboard Table</h3>
+						<p class="item-cost">$1499</p>
+						<img src="img/list/table-sideboard.png" alt="Sideboard Table"/>	
+					</a>
+				</li>
+			</ol>
+			</aside>		
 		</div><!-- #content-->
-					
+		<div id="sidebar">
+			<form id="search">
+				<input type="text" name="search" />
+				<input type="submit" value="Search"/>
+			</form>
+			<h1 class="section-title">Kitchen</h1>
+			<ul role="navigation" id="nav-secondary">
+				<li><a href="MESSINA_TEST">dining tables &amp; chairs</a></li>
+				<li><a href="MESSINA_TEST">must have appliances</a></li>
+				<li><a href="MESSINA_TEST">plates, bowls, &amp; glasses</a></li>
+				<li><a href="MESSINA_TEST">tableware &amp; accoutrement</a></li>
+			</ul>
+		</div><!-- #sidebar-->			
 	</div><!-- .container-->
-	<aside id="more-products" class="container">
-		<p class="">You May Also Like...</p>
-		<ul>
-			<li><img src="img/list/table-arlington.png" alt="Arlington Table" title="Arlington Table"/></li>
-			<li><img src="img/list/table-pacifica.png" alt="Pacifica Table" title="Arlington Table"/></li>
-			<li><img src="img/list/table-sideboard.png" alt="Sideboard Table" title="Arlington Table"/></li>
-			<li><img src="img/list/table-cucina.png" alt="Cucina Table" title="Arlington Table"/></li>
-		</ul>
-	</aside>
-
 	<footer id="main-footer">
 		<div class="container">
 			<ul role="navigation">
@@ -114,17 +139,20 @@
 
 		$('#thumbnail img').hover(
 			function () {
-				var imageSource = $(this).data('large');
+				var imageSource = $(this).parents('a').attr('href');
 				$featureImage.attr('src', imageSource);
 			}
 		);
 
 		$("#thumbnail img").click(
-		  function () {
-		   var imageSource = $(this).data('large');
+		  function (event) {
+		  event.preventDefault();
+		   var imageSource = $(this).parents('a').attr('href');
 		   $featureImage.attr('src', imageSource);
 		  }
 		);
+
+
 
 	</script>
 
